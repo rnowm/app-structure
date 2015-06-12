@@ -1,0 +1,14 @@
+{
+  "name": "foodinibackend",
+  "version": "1.0.0",
+  "description": "Foodini Backend Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "oauth20-provider": "^0.6.0"
+  }
+}
