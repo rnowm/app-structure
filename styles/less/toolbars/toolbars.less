@@ -1,0 +1,90 @@
+//
+// TEF components - toolbars
+//
+
+.nm-toolbar {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 0 20px;
+  box-sizing: border-box;
+  .clearfix();
+
+  ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .clearfix();
+
+    &.right {
+      float: right;
+    }
+  }
+
+  li {
+    float: left;
+    height: 40px;
+    min-width: 28px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+
+    &:first-child {
+      border-left: 1px solid #ccc;
+
+      &:last-child {
+        border: none;
+        padding: 0;
+      }
+    }
+
+    [icon],
+    [data-icon] { font-size: 24px; }
+
+    & > * { .truncate(); }
+  }
+
+  a {
+    display: block;
+    margin: 0 -15px;
+    height: 100%;
+    color: #333;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #d1d9dd;
+    }
+  }
+
+  &.dark {
+    background-color: #30303c;
+    color: white;
+
+    li {
+      border-color: #808080;
+      &:first-child { border-color: #808080; }
+    }
+
+    a {
+      color: white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #888;
+        background-color: #27282f;
+      }
+    }
+  }
+
+  .nm-pagination {
+    li {
+      padding: 0 5px;
+      border: none;
+    }
+  }
+}

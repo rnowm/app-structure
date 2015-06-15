@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TEF components demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link id="themeFile" rel="stylesheet" href="../theme_telefonica/css/components.telefonica.css">
+
+    <style>
+      header[data-columns] { padding-top: 30px; }
+      h1 { margin-top: 0; }
+      header > div { padding-top: 2px; }
+      code {
+        display: block;
+        overflow: hidden;
+      }
+      style {
+        display: block;
+        white-space: pre;
+        color: #0086B3;
+        border: 1px solid #cfcece;
+        background: #f2f2f2;
+        margin: 20px 0;
+        line-height: 25px;
+        overflow-y: auto;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nm-wrapper nm-content">
+      <header data-columns="2 xs1">
+        <h1>Inputs</h1>
+        <div>
+          <label>Change theme</label>
+          <div class="nm-dropdown" data-icon="down">
+            <select id="themeSelector">
+              <option value="telefonica">Telefónica</option>
+              <option value="movistar">Movistar</option>
+              <option value="o2">O2</option>
+              <option value="vivo">Vivo</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <h2>Input type text</h2>
+      <input type="text" class="nm-input" placeholder="Enter user name">
+      <code>
+        <style>
+      <input type="text" class="nm-input" placeholder="Enter user name">
+        </style>
+      </code>
+
+      <h2>Label + input</h2>
+      <p>Default behaviour is inline.</p>
+      <label>Label</label>
+      <input type="text" class="nm-input" value="input">
+      <code>
+        <style>
+      <label>Label</label>
+      <input type="text" class="nm-input" value="input">
+        </style>
+      </code>
+
+      <h2>Form container</h2>
+      <p>Use class="nm-row" to diplay separate blocks of information.</p>
+      <div class="nm-row">
+        <label>Label</label>
+        <input type="text" class="nm-input" value="input">
+      </div>
+      <div class="nm-row">
+        <label>Label</label>
+        <textarea class="nm-textarea">Textarea</textarea>
+      </div>
+      <code>
+        <style>
+      <div class="nm-row">
+        <label>Label</label>
+        <input type="text" class="nm-input" value="input">
+      </div>
+      <div class="nm-row">
+        <label>Label</label>
+        <textarea class="nm-textarea">Textarea</textarea>
+      </div>
+        </style>
+      </code>
+
+      <h2>Sizes</h2>
+      <div class="nm-row">
+        <input class="nm-input small" type="text" value="Small input">
+      </div>
+      <div class="nm-row">
+        <textarea class="nm-textarea small">Small Textarea</textarea>
+      </div>
+      <div class="nm-row">
+        <input class="nm-input large" type="text" value="Large input">
+      </div>
+      <div class="nm-row">
+        <textarea class="nm-textarea large">Large Textarea</textarea>
+      </div>
+      <code>
+        <style>
+      <input class="nm-input small" type="text" value="Small input">
+      <textarea class="nm-textarea small">Small Textarea</textarea>
+      <input class="nm-input large" type="text" value="Large input">
+      <textarea class="nm-textarea large">Large Textarea</textarea>
+        </style>
+      </code>
+
+      <h2>Icons</h2>
+      <div class="nm-row">
+        <input class="nm-input icon small" type="text" value="Small search">
+        <i data-icon="search"></i>
+      </div>
+      <div class="nm-row">
+        <input class="nm-input icon" type="text" value="Small search">
+        <i data-icon="search"></i>
+      </div>
+      <div class="nm-row">
+        <input class="nm-input icon large" type="text" value="Large search">
+        <i data-icon="search"></i>
+      </div>
+      <code>
+        <style>
+      <input class="nm-input icon small" type="text" value="Search">
+      <i data-icon="search"></i>
+        </style>
+      </code>
+
+      <h2>Block</h2>
+      <p>Fits the available space.</p>
+      <div class="nm-row">
+        <input class="nm-input block" type="text" value="Text">
+      </div>
+      <div class="nm-row">
+        <input class="nm-input block icon" type="text" value="Search">
+        <i data-icon="search"></i>
+      </div>
+      <code>
+        <style>
+      <input class="nm-input block" type="text" value="Text">
+
+      <input class="nm-input block icon" type="text" value="Search">
+      <i data-icon="search"></i>
+        </style>
+      </code>
+
+      <h2>Validations</h2>
+      <div class="nm-row nm-ok">
+        <label>Inline small input</label>
+        <input class="nm-input small" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-ok">
+        <label>Inline input</label>
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-ok">
+        <label>Inline large input</label>
+        <input class="nm-input large" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-ok">
+        <label>Block input</label>
+        <input class="nm-input block" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <code>
+        <style>
+      <div class="nm-row nm-ok">
+        <label>Label</label>
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+        </style>
+      </code>
+
+      <div class="nm-row nm-warning">
+        <label>Label</label>
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field has a warning
+        </div>
+      </div>
+      <code>
+        <style>
+      <div class="nm-row nm-warning">
+        <label>Label</label>
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field has a warning
+        </div>
+      </div>
+        </style>
+      </code>
+
+      <div class="nm-row nm-error">
+        <label>Label</label>
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field is invalid
+        </div>
+      </div>
+      <code>
+        <style>
+      <div class="nm-row nm-error">
+        <label>Label</label>
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field is invalid
+        </div>
+      </div>
+        </style>
+      </code>
+
+      <h2>Inline Inputs & buttons</h2>
+      <div class="nm-row">
+        <a href="" class="nm-button small">Anchor</a>
+        <input type="text" class="nm-input small" placeholder="Enter user name">
+        <button class="nm-button small positive">Button</button>
+      </div>
+      <div class="nm-row">
+        <a href="" class="nm-button">Anchor</a>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button positive">Button</button>
+      </div>
+      <div class="nm-row">
+        <a href="" class="nm-button large">Anchor</a>
+        <input type="text" class="nm-input large" placeholder="Enter user name">
+        <button class="nm-button large positive">Button</button>
+      </div>
+      <code>
+        <style>
+      <div class="nm-row">
+        <a href="" class="nm-button small">Anchor</a>
+        <input type="text" class="nm-input small" placeholder="Enter user name">
+        <button class="nm-button small positive">Button</button>
+      </div>
+        </style>
+      </code>
+
+      <h2>Grouped Inputs & buttons</h2>
+
+      <div class="nm-group">
+        <a href="" class="nm-button small">Anchor</a>
+        <input type="text" class="nm-input small" placeholder="Enter user name">
+        <button class="nm-button small positive">Button</button>
+      </div>
+      <div class="nm-group">
+        <a href="" class="nm-button">Anchor</a>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button positive">Button</button>
+      </div>
+      <div class="nm-group">
+        <a href="" class="nm-button large">Anchor</a>
+        <input type="text" class="nm-input large" placeholder="Enter user name">
+        <button class="nm-button large positive">Button</button>
+      </div>
+      <code>
+        <style>
+      <div class="nm-group">
+        <a href="" class="nm-button small">Anchor</a>
+        <input type="text" class="nm-input small" placeholder="Enter user name">
+        <button class="nm-button small positive">Button</button>
+      </div>
+        </style>
+      </code>
+
+      <div class="nm-group">
+        <button class="nm-button">
+          <i data-icon="minus"></i>
+        </button>
+        <button class="nm-button">
+          <i data-icon="plus"></i>
+        </button>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+      </div>
+
+      <div class="nm-group">
+        <a class="nm-button">
+          <i data-icon="minus"></i>
+        </a>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button">
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+
+      <div class="nm-group">
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button">
+          <i data-icon="minus"></i>
+        </button>
+        <button class="nm-button">
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+      <code>
+        <style>
+      <div class="nm-group">
+        <button class="nm-button">
+          <i data-icon="minus"></i>
+        </button>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button">
+          <i data-icon="plus"></i>
+        </button>
+      </div>
+        </style>
+      </code>
+    </div>
+
+    <script>
+      var theme = document.getElementById('themeSelector');
+      theme.addEventListener('change', function() {
+        var link = document.getElementById('themeFile');
+        link.href = '../theme_'
+          + theme.value + '/css/components.'
+          + theme.value + '.css';
+      });
+    </script>
+  </body>
+</html>

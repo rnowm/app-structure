@@ -1,0 +1,36 @@
+//
+// Reset default browser styles
+//
+
+body {
+  background: white;
+  height: 100%;
+}
+
+button::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+button {
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+// disabled
+[disabled],
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+// helper classes
+.nm-left { text-align: left; }
+.nm-center { text-align: center; }
+.nm-right { text-align: right; }
+.nm-relative { position: relative; }
+.nm-absolute { position: absolute; }
+.nm-inline { display: inline-block; }
+.nm-block { display: block; }

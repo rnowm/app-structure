@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TEF components demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link id="themeFile" rel="stylesheet" href="../theme_telefonica/css/components.telefonica.css">
+
+    <style>
+      header[data-columns] { padding-top: 30px; }
+      h1 { margin-top: 0; }
+      header > div { padding-top: 2px; }
+      code {
+        display: block;
+        overflow: hidden;
+      }
+      style {
+        display: block;
+        white-space: pre;
+        color: #0086B3;
+        border: 1px solid #cfcece;
+        background: #f2f2f2;
+        margin: 20px 0;
+        line-height: 25px;
+        overflow-y: auto;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nm-wrapper nm-content">
+      <header data-columns="2 xs1">
+        <h1>Radio buttons</h1>
+        <div>
+          <label>Change theme</label>
+          <div class="nm-dropdown" data-icon="down">
+            <select id="themeSelector">
+              <option value="telefonica">Telefónica</option>
+              <option value="movistar">Movistar</option>
+              <option value="o2">O2</option>
+              <option value="vivo">Vivo</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <h2>Default</h2>
+      <label class="nm-radio">
+        <input checked="" type="radio" name="radio1">
+        <span>Radio text 1</span>
+      </label>
+      <label class="nm-radio">
+        <input type="radio" name="radio1">
+        <span>Radio text 2</span>
+      </label>
+      <code>
+        <style>
+      <label class="nm-radio">
+        <input checked="" type="radio" name="radio1">
+        <span>Radio text 1</span>
+      </label>
+        </style>
+      </code>
+
+      <h2>Right aligned</h2>
+      <label class="nm-radio right">
+        <input checked="" type="radio" name="radio2">
+        <span>Radio text 1</span>
+      </label>
+      <label class="nm-radio right">
+        <input type="radio" name="radio2">
+        <span>Radio text 2</span>
+      </label>
+      <code>
+        <style>
+      <label class="nm-radio right">
+        <input checked="" type="radio" name="radio2">
+        <span>Radio text 1</span>
+      </label>
+        </style>
+      </code>
+
+      <h2>Block</h2>
+      <label class="nm-radio block">
+        <input checked="" type="radio" name="radio3">
+        <span>Radio text 1</span>
+      </label>
+      <label class="nm-radio block block">
+        <input type="radio" name="radio3">
+        <span>Radio text 2</span>
+      </label>
+      <code>
+        <style>
+      <label class="nm-radio block">
+        <input checked="" type="radio" name="radio3">
+        <span>Radio text 1</span>
+      </label>
+        </style>
+      </code>
+
+      <h2>Block and right aligned</h2>
+      <label class="nm-radio block right">
+        <input checked="" type="radio" name="radio4">
+        <span>Radio text 1</span>
+      </label>
+      <label class="nm-radio block right">
+        <input type="radio" name="radio4">
+        <span>Radio text 2</span>
+      </label>
+      <code>
+        <style>
+      <label class="nm-radio block right">
+        <input checked="" type="radio" name="radio4">
+        <span>Radio text 1</span>
+      </label>
+        </style>
+      </code>
+
+      <h2>Disabled</h2>
+      <label class="nm-radio disabled">
+        <input checked="" type="radio" name="radio5">
+        <span>Radio text 1</span>
+      </label>
+      <label class="nm-radio" disabled>
+        <input type="radio" name="radio5">
+        <span>Radio text 2</span>
+      </label>
+      <code>
+        <style>
+      <label class="nm-radio disabled">
+        <input checked="" type="radio" name="radio5">
+        <span>Radio text 1</span>
+      </label>
+      or
+      <label class="nm-radio" disabled>
+        <input checked="" type="radio" name="radio5">
+        <span>Radio text 1</span>
+      </label>
+        </style>
+      </code>
+    </div>
+
+    <script>
+      var theme = document.getElementById('themeSelector');
+      theme.addEventListener('change', function() {
+        var link = document.getElementById('themeFile');
+        link.href = '../theme_'
+          + theme.value + '/css/components.'
+          + theme.value + '.css';
+      });
+    </script>
+  </body>
+</html>

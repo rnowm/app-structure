@@ -1,0 +1,29 @@
+{
+  "name": "sidebars",
+  "version": "0.2.24",
+  "homepage": "https://github.com/tef-components/sidebars",
+  "authors": [
+    "the TEF components team"
+  ],
+  "description": "TEF components - sidebars",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "bower.json",
+    ".gitignore",
+    "README.md",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "0.2.24",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.24",
+    "commit": "d8c7a24ec9100f44c095d0197bdaba52ebd1591c"
+  },
+  "_source": "git://github.com/tef-components/tabs.git",
+  "_target": "0.2.24",
+  "_originalSource": "tef-components/tabs"
+}

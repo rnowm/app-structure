@@ -1,0 +1,20 @@
+{
+  "name": "tooltips",
+  "version": "0.2.22",
+  "homepage": "https://github.com/tef-components/tooltips",
+  "authors": [
+    "the TEF components team"
+  ],
+  "description": "TEF components - tooltips",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "bower.json",
+    ".gitignore",
+    "README.md",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components"
+  ]
+}

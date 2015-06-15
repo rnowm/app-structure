@@ -1,0 +1,29 @@
+{
+  "name": "tooltips",
+  "version": "0.2.22",
+  "homepage": "https://github.com/tef-components/tooltips",
+  "authors": [
+    "the TEF components team"
+  ],
+  "description": "TEF components - tooltips",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "bower.json",
+    ".gitignore",
+    "README.md",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "0.2.22",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.22",
+    "commit": "9e8509b2e679e1131f396dacbfd619eafe8f82b2"
+  },
+  "_source": "git://github.com/tef-components/tooltips.git",
+  "_target": "0.2.22",
+  "_originalSource": "tef-components/tooltips"
+}

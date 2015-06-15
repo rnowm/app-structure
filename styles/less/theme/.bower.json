@@ -1,0 +1,44 @@
+{
+  "name": "theme",
+  "version": "0.2.68",
+  "homepage": "https://github.com/tef-components/theme",
+  "authors": [
+    "the TEF components team"
+  ],
+  "description": "TEF components - theme_telefonica",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "bower.json",
+    ".gitignore",
+    "node_modules"
+  ],
+  "dependencies": {
+    "icons": "tef-components/icons#0.1.27",
+    "buttons": "tef-components/buttons#0.2.24",
+    "inputs": "tef-components/inputs#0.1.25",
+    "dropdowns": "tef-components/dropdowns#0.2.17",
+    "checkboxes": "tef-components/checkboxes#0.2.22",
+    "radios": "tef-components/radios#0.2.20",
+    "modals": "tef-components/modals#0.2.25",
+    "headers": "tef-components/headers#0.2.20",
+    "utils": "tef-components/utils#0.2.22",
+    "grid": "tef-components/grid#0.1.17",
+    "sidebars": "tef-components/sidebars#0.2.22",
+    "tabs": "tef-components/tabs#0.2.24",
+    "toolbars": "tef-components/toolbars#0.2.23",
+    "tables": "tef-components/tables#0.2.23",
+    "tooltips": "tef-components/tooltips#0.2.22",
+    "lists": "tef-components/lists#0.2.19"
+  },
+  "_release": "0.2.68",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.68",
+    "commit": "7927fd6f137d41abb0b698fb6bcd22b124a3193d"
+  },
+  "_source": "git://github.com/tef-components/theme.git",
+  "_target": "~0.2.68",
+  "_originalSource": "tef-components/theme",
+  "_direct": true
+}

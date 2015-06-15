@@ -1,0 +1,89 @@
+//
+// Mixins
+//
+
+// clearfix
+.clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Truncate
+.truncate() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Fit element between floated objects
+.fit() {
+  .truncate();
+  display: block;
+  width: auto;
+}
+
+// Center vertically
+.centerY() {
+  font-size: 0;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 100%;
+    margin-left: -1px;
+  }
+
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+//
+// Media queries
+//
+
+// Mobile
+.media-max-xs(@rules) {
+  @media only screen and (max-width: (@widthXS - 1px)) { @rules(); }
+}
+
+.media-min-xs(@rules) {
+  @media only screen and (min-width: @widthXS) { @rules(); }
+}
+
+// Tablet vertical
+.media-max-sm(@rules) {
+  @media only screen and (max-width: (@widthSM - 1px)) { @rules(); }
+}
+
+.media-min-sm(@rules) {
+  @media only screen and (min-width: @widthSM) { @rules(); }
+}
+
+// Tablet horizontal
+.media-max-md(@rules) {
+  @media only screen and (max-width: (@widthMD - 1px)) { @rules(); }
+}
+
+.media-min-md(@rules) {
+  @media only screen and (min-width: @widthMD) { @rules(); }
+}
+
+// Desktop
+.media-max-lg(@rules) {
+  @media only screen and (max-width: (@widthLG - 1px)) { @rules(); }
+}
+
+.media-min-lg(@rules) {
+  @media only screen and (min-width: @widthLG) { @rules(); }
+}

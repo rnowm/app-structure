@@ -1,0 +1,20 @@
+{
+  "name": "lists",
+  "version": "0.2.19",
+  "homepage": "https://github.com/tef-components/lists",
+  "authors": [
+    "the TEF components team"
+  ],
+  "description": "TEF components - lists",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "bower.json",
+    ".gitignore",
+    "README.md",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "bower_components"
+  ]
+}
