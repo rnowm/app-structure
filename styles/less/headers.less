@@ -12,12 +12,14 @@
     line-height: @headerHeight;
     margin: 0;
     text-align: center;
-    font-size: 22px;
     box-shadow: @shadowInset;
 
     a {
       color: white;
+      font-size: 0;
       text-decoration: none;
+
+      &:before { font-size: 200px; }
     }
   }
 
