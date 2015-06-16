@@ -3,9 +3,9 @@
   "version": "0.1.27",
   "homepage": "https://github.com/tef-components/icons",
   "authors": [
-    "the TEF components team"
+    "the nm components team"
   ],
-  "description": "TEF components - icons",
+  "description": "nm components - icons",
   "main": "icons.html",
   "license": "MIT",
   "ignore": [

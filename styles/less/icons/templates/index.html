@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= fontBaseName %></title>
+    <style>
+    body {
+      margin:0;
+      padding:10px 20px;
+      background:#fff;
+      color:#222;
+    }
+    h1, div, footer {
+      font-family:"Helvetica Neue", Arial, sans-serif;
+    }
+    h1 {
+      margin:20px 0 10px;
+      font-size:30px;
+      font-weight:normal;
+    }
+    .icons__item {
+      cursor:pointer;
+    }
+    .icons__item:hover {
+      color:#3c90be;
+    }
+    .icons__item i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 30px;
+    }
+    footer {
+      margin-top:40px;
+      font-size:14px;
+      color:#999;
+    }
+    </style>
+    <link rel="stylesheet" href="../../../css/styles.css">
+  </head>
+  <body>
+      <h1>Usage</h1>
+      <pre><code>&lt;i icon=&quot;<%= baseClass ? baseClass + ' ' : '' %><%= classPrefix %><span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+      <% if (addLigatures) { %>
+      <pre><code>&lt;i class=&quot;ligature-icons&quot;&gt;<span id="name2">name</span>&lt;/i&gt;</code></pre>
+      <% } %>
+      <p>(Click on an icon to get the class name)</p>
+
+      <h1><%= fontBaseName %></h1>
+
+      <div class="icons" id="icons">
+          <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
+              <div class="icons__item" <%= classPrefix %> name="<%= glyph %>">
+                <i icon="<%= glyph %>"></i>
+                <%= glyph %>
+              </div>
+          <% } %>
+      </div>
+
+      <% if (addLigatures) { %>
+      <div class="ligature-icons" style="display:none">
+          <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx]; %>
+              <%= glyph %>
+          <% } %>
+      </div>
+      <% } %>
+
+
+      <script>
+        (function() {
+          document.getElementById('icons').onclick = function(e) {
+            e = e || window.event;
+            var name = e.target.getAttribute('name') || e.target.parentNode.getAttribute('name');
+            document.getElementById('name').innerHTML = name;
+            <% if (addLigatures) { %>
+            document.getElementById('name2').innerHTML = name;
+            <% } %>
+          }
+        })();
+      </script>
+  </body>
+</html>

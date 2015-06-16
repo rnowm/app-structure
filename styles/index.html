@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>nm components demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <style>
+      header[columns] { padding-top: 30px; }
+      h1 { margin-top: 0; }
+      header > div { padding-top: 2px; }
+      code {
+        display: block;
+        overflow: hidden;
+      }
+      style {
+        display: block;
+        white-space: pre;
+        color: #0086B3;
+        border: 1px solid #cfcece;
+        background: #f2f2f2;
+        margin: 20px 0;
+        line-height: 25px;
+        overflow-y: auto;
+        border-radius: 4px;
+      }.demo {
+        padding: 55px 0;
+      }
+      .demo .nm-button {
+        padding: 20px 10px;
+      }
+      .colors li {
+        margin-bottom: 10px;
+      }
+      .colors li span {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      .primary   { background: #A4CD8B; }
+      .primary-1 { background: #E5F2DE; }
+      .primary-2 { background: #CAE5B9; }
+      .primary-3 { background: #79AC5B; }
+      .primary-4 { background: #568C36; }
+
+      .secondary   { background: #6A9C8C; }
+      .secondary-1 { background: #CADDD7; }
+      .secondary-2 { background: #97BAAF; }
+      .secondary-3 { background: #45836F; }
+      .secondary-4 { background: #296B55; }
+
+      .subdued   { background: #D1E098; }
+      .subdued-1 { background: #F6FBE5; }
+      .subdued-2 { background: #ECF6C7; }
+      .subdued-3 { background: #A9BC63; }
+      .subdued-4 { background: #85993B; }
+
+      .grey   { background: #f2f2f2; }
+      .grey-1 { background: #cfcece; }
+      .grey-2 { background: #b3b5b7; }
+      .grey-3 { background: #aeadad; }
+      .grey-4 { background: #686868; }
+      .grey-5 { background: #31313d; color: #fff; }
+    </style>
+  </head>
+
+  <body>
+    <div class="nm-wrapper nm-content">
+      <header columns="2 xs1">
+        <h1>Components</h1>
+      </header>
+
+      <h2>Colors</h2>
+      <ul class="colors nm-gutter" columns="6 sm3 xs2">
+        <li><span class="primary">@primary</span></li>
+        <li><span class="primary-1">@primary-1</span></li>
+        <li><span class="primary-2">@primary-2</span></li>
+        <li><span class="primary-3">@primary-3</span></li>
+        <li><span class="primary-4">@primary-4</span></li>
+      </ul>
+      <ul class="colors nm-gutter" columns="6 sm3 xs2">
+        <li><span class="secondary">@secondary</span></li>
+        <li><span class="secondary-1">@secondary-1</span></li>
+        <li><span class="secondary-2">@secondary-2</span></li>
+        <li><span class="secondary-3">@secondary-3</span></li>
+        <li><span class="secondary-4">@secondary-4</span></li>
+      </ul>
+      <ul class="colors nm-gutter" columns="6 sm3 xs2">
+        <li><span class="subdued">@subdued</span></li>
+        <li><span class="subdued-1">@subdued-1</span></li>
+        <li><span class="subdued-2">@subdued-2</span></li>
+        <li><span class="subdued-3">@subdued-3</span></li>
+        <li><span class="subdued-4">@subdued-4</span></li>
+      </ul>
+      <ul class="colors nm-gutter" columns="6 sm3 xs2">
+        <li><span class="grey">@grey</span></li>
+        <li><span class="grey-1">@grey-1</span></li>
+        <li><span class="grey-2">@grey-2</span></li>
+        <li><span class="grey-3">@grey-3</span></li>
+        <li><span class="grey-4">@grey-4</span></li>
+        <li><span class="grey-5">@grey-5</span></li>
+      </ul>
+
+      <h2>Buttons</h2>
+      <div class="nm-row">
+        <button class="nm-button small">Small</button>
+        <button class="nm-button positive small">Small Positive</button>
+        <button class="nm-button negative small">Small Negative</button>
+        <button class="nm-button subdued small">Small Subdued</button>
+        <button class="nm-button significant small">Small Significant</button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button">Default</button>
+        <button class="nm-button positive">Positive</button>
+        <button class="nm-button negative">Negative</button>
+        <button class="nm-button subdued">Subdued</button>
+        <button class="nm-button significant">Significant</button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button large">Large</button>
+        <button class="nm-button positive large">Large Positive</button>
+        <button class="nm-button negative large">Large Negative</button>
+        <button class="nm-button subdued large">Large Subdued</button>
+        <button class="nm-button significant large">Large Significant</button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button block small">Small Block</button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button block">Block</button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button block large">Large Block</button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button small">
+          Add
+        </button>
+        <button class="nm-button small">
+          <i icon="plus"></i>
+        </button>
+        <button class="nm-button small">
+          <i icon="plus"></i>
+          <span>Add</span>
+        </button>
+        <button class="nm-button small">
+          <span>Add</span>
+          <i icon="plus"></i>
+        </button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button">
+          Add
+        </button>
+        <button class="nm-button">
+          <i icon="plus"></i>
+        </button>
+        <button class="nm-button">
+          <i icon="plus"></i>
+          <span>Add</span>
+        </button>
+        <button class="nm-button">
+          <span>Add</span>
+          <i icon="plus"></i>
+        </button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button large">
+          Add
+        </button>
+        <button class="nm-button large">
+          <i icon="plus"></i>
+        </button>
+        <button class="nm-button large">
+          <i icon="plus"></i>
+          <span>Add</span>
+        </button>
+        <button class="nm-button large">
+          <span>Add</span>
+          <i icon="plus"></i>
+        </button>
+      </div>
+      <div class="nm-row">
+        <button class="nm-button" disabled>Default</button>
+        <button class="nm-button positive" disabled>Positive</button>
+        <button class="nm-button negative" disabled>Negative</button>
+        <button class="nm-button subdued" disabled>Subdued</button>
+        <button class="nm-button significant" disabled>Significant</button>
+      </div>
+      <div class="nm-group">
+        <button class="nm-button">Default</button>
+        <button class="nm-button positive">Positive</button>
+        <button class="nm-button negative">Negative</button>
+        <button class="nm-button subdued">Subdued</button>
+        <button class="nm-button significant">Significant</button>
+      </div>
+      <div class="nm-group disabled">
+        <button class="nm-button">Default</button>
+        <button class="nm-button positive">Positive</button>
+        <button class="nm-button negative">Negative</button>
+        <button class="nm-button subdued">Subdued</button>
+        <button class="nm-button significant">Significant</button>
+      </div>
+
+      <h2>Inputs</h2>
+      <div class="nm-row">
+        <label class="nm-inline">Label</label>
+        <input type="text" class="nm-input small" value="input">
+        <input type="text" class="nm-input" value="input">
+        <input type="text" class="nm-input large" value="input">
+      </div>
+      <div class="nm-row">
+        <input class="nm-input icon small" type="text" value="Search">
+        <i icon="search"></i>
+        <input class="nm-input icon" type="text" value="Search">
+        <i icon="search"></i>
+        <input class="nm-input icon large" type="text" value="Search">
+        <i icon="search"></i>
+      </div>
+      <div class="nm-row">
+        <label>Label</label>
+        <input type="text" class="nm-input small block" value="input">
+      </div>
+      <div class="nm-row">
+        <input type="text" class="nm-input block" value="input">
+      </div>
+      <div class="nm-row">
+        <input class="nm-input block icon" type="text" value="Search">
+        <i icon="search"></i>
+      </div>
+      <div class="nm-row">
+        <input type="text" class="nm-input large block" value="input">
+      </div>
+      <div class="nm-row nm-ok">
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-ok">
+        <input class="nm-input block" type="text" value="text">
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-error">
+        <input class="nm-input" type="text" value="text">
+        <div class="nm-message">
+          This field is invalid
+        </div>
+      </div>
+      <div class="nm-row nm-error">
+        <input class="nm-input block" type="text" value="text">
+        <div class="nm-message">
+          This field is invalid
+        </div>
+      </div>
+      <div class="nm-group">
+        <a href="" class="nm-button small">Anchor</a>
+        <input type="text" class="nm-input small" placeholder="Enter user name">
+        <button class="nm-button small positive">Button</button>
+      </div>
+      <div class="nm-group">
+        <a href="" class="nm-button">Anchor</a>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button positive">Button</button>
+      </div>
+      <div class="nm-group">
+        <a href="" class="nm-button large">Anchor</a>
+        <input type="text" class="nm-input large" placeholder="Enter user name">
+        <button class="nm-button large">Button</button>
+      </div>
+      <div class="nm-group">
+        <button class="nm-button small">
+          <i icon="minus"></i>
+        </button>
+        <input type="text" class="nm-input small" placeholder="Enter user name">
+        <button class="nm-button small">
+          <i icon="plus"></i>
+        </button>
+      </div>
+      <div class="nm-group">
+        <button class="nm-button">
+          <i icon="minus"></i>
+        </button>
+        <input type="text" class="nm-input" placeholder="Enter user name">
+        <button class="nm-button">
+          <i icon="plus"></i>
+        </button>
+      </div>
+      <div class="nm-group">
+        <button class="nm-button large">
+          <i icon="minus"></i>
+        </button>
+        <input type="text" class="nm-input large" placeholder="Enter user name">
+        <button class="nm-button large">
+          <i icon="plus"></i>
+        </button>
+      </div>
+
+      <h2>Textareas</h2>
+
+      <div class="nm-row nm-ok">
+        <textarea class="nm-input small">Text</textarea>
+        <textarea class="nm-input">Text</textarea>
+        <textarea class="nm-input large">Text</textarea>
+      </div>
+      <div class="nm-row nm-ok">
+        <textarea class="nm-input">Text</textarea>
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-ok">
+        <textarea class="nm-input block">Text</textarea>
+        <div class="nm-message">
+          This field is valid
+        </div>
+      </div>
+      <div class="nm-row nm-error">
+        <textarea class="nm-input">Text</textarea>
+        <div class="nm-message">
+          This field is invalid
+        </div>
+      </div>
+      <div class="nm-row nm-error">
+        <textarea class="nm-input block">Text</textarea>
+        <div class="nm-message">
+          This field is invalid
+        </div>
+      </div>
+
+      <h2>Dropdowns</h2>
+      <div class="nm-row">
+        <div class="nm-dropdown" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="nm-dropdown active" icon="down">
+          <span>Option 1</span>
+          <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </div>
+        <div class="nm-dropdown active up" icon="up">
+          <span>Option 1</span>
+          <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div class="nm-row">
+        <div class="nm-dropdown small" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="nm-dropdown" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="nm-dropdown large" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="nm-row">
+        <div class="nm-dropdown small block" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="nm-row">
+        <div class="nm-dropdown block" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="nm-row">
+        <div class="nm-dropdown large block" icon="down">
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+
+      <h2>Radio buttons</h2>
+      <div class="tef row">
+        <label class="nm-radio">
+          <input checked="" type="radio" name="radio1">
+          <span>Radio text 1</span>
+        </label>
+        <label class="nm-radio">
+          <input type="radio" name="radio1">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-radio right">
+          <input checked="" type="radio" name="radio2">
+          <span>Radio text 1</span>
+        </label>
+        <label class="nm-radio right">
+          <input type="radio" name="radio2">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-radio block">
+          <input checked="" type="radio" name="radio3">
+          <span>Radio text 1</span>
+        </label>
+        <label class="nm-radio block block">
+          <input type="radio" name="radio3">
+          <span>Radio text 2</span>
+        </label>
+      <div class="tef row">
+        <label class="nm-radio block right">
+          <input checked="" type="radio" name="radio4">
+          <span>Radio text 1</span>
+        </label>
+        <label class="nm-radio block right">
+          <input type="radio" name="radio4">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-radio disabled">
+          <input checked="" type="radio" name="radio5">
+          <span>Radio text 1</span>
+        </label>
+        <label class="nm-radio" disabled>
+          <input type="radio" name="radio5">
+          <span>Radio text 2</span>
+        </label>
+      </div>
+
+      <h2>Checkboxes</h2>
+      <div class="tef row">
+        <label class="nm-checkbox">
+          <input checked="" type="checkbox">
+          <span icon="check">Checkbox text 1</span>
+        </label>
+        <label class="nm-checkbox">
+          <input type="checkbox">
+          <span icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-checkbox right">
+          <input checked="" type="checkbox">
+          <span icon="check">Checkbox text 1</span>
+        </label>
+        <label class="nm-checkbox right">
+          <input type="checkbox">
+          <span icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-checkbox block">
+          <input checked="" type="checkbox">
+          <span icon="check">Checkbox text 1</span>
+        </label>
+        <label class="nm-checkbox block block">
+          <input type="checkbox">
+          <span icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-checkbox block right">
+          <input checked="" type="checkbox">
+          <span icon="check">Checkbox text 1</span>
+        </label>
+        <label class="nm-checkbox block right">
+          <input type="checkbox">
+          <span icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-checkbox disabled">
+          <input checked="" type="checkbox">
+          <span icon="check">Checkbox text 1</span>
+        </label>
+        <label class="nm-checkbox" disabled>
+          <input type="checkbox">
+          <span icon="check">Checkbox text 2</span>
+        </label>
+      </div>
+
+      <h2>Switches</h2>
+      <div class="tef row">
+        <label class="nm-switch">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="nm-switch">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-switch right">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="nm-switch right">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-switch block">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="nm-switch block block">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-switch block right">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="nm-switch block right">
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+      <div class="tef row">
+        <label class="nm-switch disabled">
+          <input checked="" type="checkbox">
+          <span>Switch text 1</span>
+        </label>
+        <label class="nm-switch" disabled>
+          <input type="checkbox">
+          <span>Switch text 2</span>
+        </label>
+      </div>
+
+      <h2>Tabs</h2>
+      <div class="nm-row">
+        <ul class="nm-tabs" columns="4">
+          <li>Tab 1</li>
+          <li class="active">Tab 2</li>
+          <li>Tab 3 with a very loooooooooooooooooooong text</li>
+          <li>Tab 4</li>
+        </ul>
+      </div>
+      <div class="nm-row">
+        <ul class="nm-tabs" columns="3">
+          <li><i icon="user"></i></li>
+          <li class="active"><i icon="search"></i></li>
+          <li><i icon="help_circle"></i></li>
+        </ul>
+      </div>
+
+      <h2>Toolbars</h2>
+      <div class="nm-row">
+        <nav class="nm-toolbar">
+          <ul>
+            <li><a href=""><i icon="user"></i></a></li>
+            <li><a href="">Edit</a></li>
+            <li class="active"><a href=""><i icon="search"></i></a></li>
+            <li><a href=""><i icon="help_circle"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nm-row">
+        <nav class="nm-toolbar">
+          <ul class="right">
+            <li><a href=""><i icon="user"></i></a></li>
+            <li><a href="">Edit</a></li>
+            <li class="active"><a href=""><i icon="search"></i></a></li>
+            <li><a href=""><i icon="help_circle"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nm-row">
+        <nav class="nm-toolbar dark">
+          <ul class="right">
+            <li><a href=""><i icon="user"></i></a></li>
+            <li><a href="">Edit</a></li>
+            <li class="active"><a href=""><i icon="search"></i></a></li>
+            <li><a href=""><i icon="help_circle"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nm-row">
+        <nav class="nm-toolbar">
+          <ul>
+            <li><button class="nm-button subdued small">Cancel</button></li>
+          </ul>
+          <ul class="right">
+            <li>
+              <button class="nm-button small">OK</button>
+              <button class="nm-button negative small">Delete</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nm-row">
+        <nav class="nm-toolbar dark">
+          <ul>
+            <li><button class="nm-button subdued small">Cancel</button></li>
+          </ul>
+          <ul class="right">
+            <li>
+              <button class="nm-button small">OK</button>
+              <button class="nm-button negative small">Delete</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nm-row">
+        <nav class="nm-toolbar">
+          <ul class="nm-pagination right">
+            <li>
+              <a href=""><i icon="left"></i></a>
+            </li>
+            <li>1 of 100</li>
+            <li>
+              <a href=""><i icon="right"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nm-row">
+        <nav class="nm-toolbar dark">
+          <ul class="nm-pagination right">
+            <li>
+              <a href=""><i icon="left"></i></a>
+            </li>
+            <li>1 of 100</li>
+            <li>
+              <a href=""><i icon="right"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <h2>Lists</h2>
+      <div class="nm-row">
+        <div class="nm-list">
+          <ul>
+            <li><a href="">List item 1</a></li>
+            <li>List item 2 (not clickable)</li>
+            <li><a href="">List item 3</a></li>
+            <li><a href="">List item 4</a></li>
+            <li><a href="">List item 5</a></li>
+            <li><a href="">List item 6</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Tables</h2>
+      <table class="nm-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>column<i icon="sort"></i></th>
+          <th>column<i icon="sort_asc"></i></th>
+          <th>column<i icon="sort_desc"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>000000</td>
+          <td>000000</td>
+          <td>000000</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>000000</td>
+          <td>000000</td>
+          <td>000000</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>000000</td>
+          <td>000000</td>
+          <td>000000</td>
+        </tr>
+      </tbody>
+    </table>
+
+      <h2>Tooltips</h2>
+      <div class="nm-center demo">
+        <div class="nm-tooltip active left" tooltip="left">
+          <button class="nm-button">Button 1</button>
+        </div>
+        <div class="nm-tooltip active top" tooltip="top">
+          <button class="nm-button positive">Button 2</button>
+        </div>
+        <div class="nm-tooltip active bottom" tooltip="bottom">
+          <button class="nm-button negative">Button 3</button>
+        </div>
+        <div class="nm-tooltip active right" tooltip="right">
+          <button class="nm-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="nm-center demo">
+        <div class="nm-tooltip active start left" tooltip="left start">
+          <button class="nm-button">Button 1</button>
+        </div>
+        <div class="nm-tooltip active start top" tooltip="top start">
+          <button class="nm-button positive">Button 2</button>
+        </div>
+        <div class="nm-tooltip active start bottom" tooltip="bottom start">
+          <button class="nm-button negative">Button 3</button>
+        </div>
+        <div class="nm-tooltip active start right" tooltip="right start">
+          <button class="nm-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="nm-center demo">
+        <div class="nm-tooltip active end left" tooltip="left end">
+          <button class="nm-button">Button 1</button>
+        </div>
+        <div class="nm-tooltip active end top" tooltip="top end">
+          <button class="nm-button positive">Button 2</button>
+        </div>
+        <div class="nm-tooltip active end bottom" tooltip="bottom end">
+          <button class="nm-button negative">Button 3</button>
+        </div>
+        <div class="nm-tooltip active end right" tooltip="right end">
+          <button class="nm-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="nm-center demo">
+        <div class="nm-tooltip active reverse left" tooltip="left reverse">
+          <button class="nm-button">Button 1</button>
+        </div>
+        <div class="nm-tooltip active reverse top" tooltip="top reverse">
+          <button class="nm-button positive">Button 2</button>
+        </div>
+        <div class="nm-tooltip active reverse bottom" tooltip="bottom reverse">
+          <button class="nm-button negative">Button 3</button>
+        </div>
+        <div class="nm-tooltip active reverse right" tooltip="right reverse">
+          <button class="nm-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="nm-center demo">
+        <div class="nm-tooltip active reverse left start" tooltip="left reverse start">
+          <button class="nm-button">Button 1</button>
+        </div>
+        <div class="nm-tooltip active reverse top start" tooltip="top reverse start">
+          <button class="nm-button positive">Button 2</button>
+        </div>
+        <div class="nm-tooltip active reverse bottom start" tooltip="bottom reverse start">
+          <button class="nm-button negative">Button 3</button>
+        </div>
+        <div class="nm-tooltip active reverse right start" tooltip="right reverse start">
+          <button class="nm-button significant">Button 4</button>
+        </div>
+      </div>
+      <div class="nm-center demo">
+        <div class="nm-tooltip active reverse left end" tooltip="left reverse end">
+          <button class="nm-button">Button 1</button>
+        </div>
+        <div class="nm-tooltip active reverse top end" tooltip="top reverse end">
+          <button class="nm-button positive">Button 2</button>
+        </div>
+        <div class="nm-tooltip active reverse bottom end" tooltip="bottom reverse end">
+          <button class="nm-button negative">Button 3</button>
+        </div>
+        <div class="nm-tooltip active reverse right end" tooltip="right reverse end">
+          <button class="nm-button significant">Button 4</button>
+        </div>
+      </div>
+
+      <h2>Headers</h2>
+      <header class="nm-header">
+        <nav>
+          <button class="nm-menu" icon="menu"></button>
+          <button class="nm-close" icon="close"></button>
+          <ul>
+            <li><span>Hello George!</span><i icon="user"></i></li>
+            <li><a href=""><span>Help</span><i icon="help_circle"></i></a></li>
+            <li><a href=""><span>Exit</span><i icon="close_circle"></i></a></li>
+          </ul>
+        </nav>
+        <h1><a href="/">Service name</a></h1>
+        <h2>Brand name</h2>
+      </header>
+
+      <h2>Dialogs</h2>
+      <div class="nm-dialog">
+        <header>Download started...</header>
+        <p>Downloading document. You will find it in your Downloads folder.</p>
+        <footer>
+          <button class="nm-button subdued">Cancel</button>
+          <button class="nm-button positive">Accept</button>
+        </footer>
+      </div>
+      <div class="nm-dialog">
+        <header>
+          Download started...
+          <button class="nm-close" icon="close"></button>
+        </header>
+        <p>Downloading document. You will find it in your Downloads folder.</p>
+        <footer>
+          <button class="nm-button positive">Accept</button>
+        </footer>
+      </div>
+
+      <h2>Sidebars</h2>
+      <div columns="3">
+        <nav class="nm-sidebar">
+          <ul class="nm-tabs" columns="3">
+            <li><i icon="user"></i></li>
+            <li class="active"><i icon="search"></i></li>
+            <li><i icon="help_circle"></i></li>
+          </ul>
+          <nav class="nm-toolbar">
+            <ul>
+              <li><i icon="user"></i></li>
+              <li>Edit</li>
+              <li class="active"><i icon="search"></i></li>
+              <li><i icon="help_circle"></i></li>
+            </ul>
+          </nav>
+          <div class="nm-list">
+            <ul>
+              <li>
+                <input type="text" class="nm-input icon small block">
+                <i icon="search"></i>
+              </li>
+            </ul>
+            <header>Group 1</header>
+            <ul>
+              <li><a href="">List item 1</a></li>
+              <li><a href="">List item 2</a></li>
+              <li><a href="">List item 3</a></li>
+              <li><a href="">List item 4</a></li>
+              <li><a href="">List item 5</a></li>
+              <li><a href="">List item 6</a></li>
+            </ul>
+            <header>Group 2</header>
+            <ul>
+              <li><a href="">List item 1</a></li>
+              <li><a href="">List item 2</a></li>
+              <li><a href="">List item 3</a></li>
+              <li><a href="">List item 4</a></li>
+              <li><a href="">List item 5</a></li>
+              <li><a href="">List item 6</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

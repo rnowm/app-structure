@@ -1,0 +1,181 @@
+//
+// nm components - buttons
+//
+
+// Reset
+button::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+.nm-button {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 35px;
+  background-image: none;
+  background-color: @color;
+  color: @text;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid @border;
+  border-radius: @radius;
+  padding: 8px 9px;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  touch-action: manipulation;
+  box-sizing: border-box;
+  text-transform: none;
+  .truncate();
+
+  // states
+  &:hover,
+  &:focus {
+    color: @textHover;
+    background-color: @colorHover;
+    border-color: @borderHover;
+    outline: none;
+  }
+
+  &:active,
+  &.active {
+    color: @textActive;
+    background-color: @colorActive;
+    border-color: @borderActive;
+  }
+
+  // icons
+  [icon]:before,
+  [data-icon]:before {
+    position: relative;
+    font-size: 23px;
+    line-height: 0;
+    top: 4px;
+  }
+
+  [icon] + span,
+  [data-icon] + span,
+  span + [icon],
+  span + [data-icon] { margin-left: 5px; }
+  span { font-size: 15px; }
+
+  // sizes
+  &.small {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 6px 9px;
+
+    [icon]:before,
+    [data-icon]:before {
+      font-size: 18px;
+      top: 3px;
+    }
+    span { font-size: 11px; }
+  }
+
+  &.large {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 7px 14px;
+
+    [icon]:before,
+    [data-icon]:before {
+      font-size: 32px;
+      top: 5px;
+    }
+    span { font-size: 24px; }
+  }
+
+  // colors loop
+  &.positive {
+    background-color: @positive;
+    color: @positiveText;
+    border-color: @positiveBorder;
+
+    &:hover,
+    &:focus {
+      background-color: @positiveHover;
+      color: @positiveTextHover;
+      border-color: @positiveBorderHover;
+    }
+
+    &:active,
+    &.active {
+      background-color: @positiveActive;
+      color: @positiveTextActive;
+      border-color: @positiveBorderActive;
+    }
+  }
+
+  &.negative {
+    background-color: @negative;
+    color: @negativeText;
+    border-color: @negativeBorder;
+
+    &:hover,
+    &:focus {
+      background-color: @negativeHover;
+      color: @negativeTextHover;
+      border-color: @negativeBorderHover;
+    }
+
+    &:active,
+    &.active {
+      background-color: @negativeActive;
+      color: @negativeTextActive;
+      border-color: @negativeBorderActive;
+    }
+  }
+
+  &.subdued {
+    background-color: @subdued;
+    color: @subduedText;
+    border-color: @subduedBorder;
+
+    &:hover,
+    &:focus {
+      background-color: @subduedHover;
+      color: @subduedTextHover;
+      border-color: @subduedBorderHover;
+    }
+
+    &:active,
+    &.active {
+      background-color: @subduedActive;
+      color: @subduedTextActive;
+      border-color: @subduedBorderActive;
+    }
+  }
+
+  &.significant {
+    background-color: @significant;
+    color: @significantText;
+    border-color: @significantBorder;
+
+    &:hover,
+    &:focus {
+      background-color: @significantHover;
+      color: @significantTextHover;
+      border-color: @significantBorderHover;
+    }
+
+    &:active,
+    &.active {
+      background-color: @significantActive;
+      color: @significantTextActive;
+      border-color: @significantBorderActive;
+    }
+  }
+
+  // options
+  &.block {
+    display: block;
+    width: 100%;
+  }
+
+  & + .nm-button {
+    margin-left: 6px;
+  }
+}

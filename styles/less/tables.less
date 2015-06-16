@@ -1,0 +1,61 @@
+//
+// nm components - tables
+//
+
+.nm-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  background-color: #f6f6f6;
+  color: #333;
+  font-size: 14px;
+  line-height: 16px;
+  box-sizing: border-box;
+  text-align: left;
+
+  thead {
+    background-color: #fffdeb;
+    border: 1px solid #ccc;
+    border-left: none;
+
+    th {
+      border-left: 1px solid #ccc;
+    }
+
+    [icon],
+    [data-icon] {
+      color: @significant;
+      padding-left: 10px;
+    }
+  }
+
+  th {
+    padding: 7px 10px;
+    font-weight: normal;
+  }
+
+  tbody {
+    tr {
+      border: 1px solid #ccc;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        background-color: #fef9e5;
+        border: 1px solid #e7d28a;
+
+        td, th {
+          border-top: 1px solid #e7d28a;
+        }
+      }
+    }
+  }
+
+  td {
+    padding: 7px 10px;
+  }
+
+  a { color: #333; }
+}

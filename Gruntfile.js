@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     less: {
       default: {
         files: {
-          'styles/css/styles.css': 'styles/less/theme/less/theme.less'
+          'styles/css/styles.css': 'styles/less/theme.less'
         }
       }
     },
@@ -37,13 +37,36 @@ module.exports = function(grunt) {
         tasks: ['less','autoprefixer','cssmin'],
         options: {
           nospawn: true,
-          livereload: true
+          // livereload: true
+        }
+      }
+    },
+
+    // Creates embedded icon font
+    webfont: {
+      embedded: {
+        src: 'styles/less/icons/source/*.svg',
+        dest: 'styles/less/icons/fonts/',
+        options: {
+          stylesheet: 'less',
+          font: 'icons',
+          //embed: 'woff,ttf,eot',
+          embed: 'woff,ttf',
+          engine: 'node',
+          template: 'styles/less/icons/templates/style.css',
+          htmlDemoTemplate: 'styles/less/icons/templates/index.html',
+          templateOptions: {
+            baseClass: '',
+            classPrefix: '',
+            mixinPrefix: ""
+          }
         }
       }
     }
   });
 
   grunt.registerTask('default', [
+    'webfont',
     'less',
     'autoprefixer',
     'cssmin',
