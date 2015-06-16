@@ -3,8 +3,8 @@
 //
 
 .nm-toolbar {
-  background-color: #f2f2f2;
-  color: #333;
+  background-color: @grey;
+  color: @grey-5;
   padding: 0 20px;
   box-sizing: border-box;
   .clearfix();
@@ -29,10 +29,10 @@
     font-size: 14px;
     text-align: center;
     padding: 0 15px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid @grey-1;
 
     &:first-child {
-      border-left: 1px solid #ccc;
+      border-left: 1px solid @grey-1;
 
       &:last-child {
         border: none;
@@ -50,23 +50,23 @@
     display: block;
     margin: 0 -15px;
     height: 100%;
-    color: #333;
+    color: @grey-5;
     text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: #d1d9dd;
+      background-color: @color-1;
     }
   }
 
   &.dark {
-    background-color: #30303c;
+    background-color: @grey-5;
     color: white;
 
     li {
-      border-color: #808080;
-      &:first-child { border-color: #808080; }
+      border-color: @grey-4;
+      &:first-child { border-color: @grey-4; }
     }
 
     a {
@@ -75,8 +75,8 @@
       &:hover,
       &:focus,
       &:active {
-        color: #888;
-        background-color: #27282f;
+        color: @grey-4;
+        background-color: @grey-5;
       }
     }
   }

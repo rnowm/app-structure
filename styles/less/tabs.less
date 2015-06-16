@@ -5,33 +5,33 @@
 .nm-tabs {
   height: 50px;
   width: 100%;
-  background-color: #d1d9dd;
-  border-bottom: 1px solid #e5eaec;
+  background-color: @color-1;
+  border-bottom: 1px solid @color-2;
   box-sizing: border-box;
 
   li {
     height: 40px;
-    color: #84959e;
-    background-color: #beccd4;
+    color: @color;
+    background-color: @color-2;
     line-height: 40px;
     font-size: 14px;
     text-align: center;
     padding: 0 10px;
-    border-bottom: 1px solid #b7c1c6;
-    border-right: 1px solid #b7c1c6;
+    border-bottom: 1px solid @color;
+    border-right: 1px solid @color;
     cursor: pointer;
     .truncate();
 
     &:hover,
     &:focus,
     &:active {
-      color: #364145;
+      color: @grey-5;
     }
 
     &.active {
-      color: #364145;
-      background-color: #d1d9dd;
-      border-bottom-color: #d1d9dd;
+      color: @grey-5;
+      background-color: @color-1;
+      border-bottom-color: @color-1;
     }
 
     [icon],

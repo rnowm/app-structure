@@ -13,7 +13,7 @@ button::-moz-focus-inner {
   vertical-align: middle;
   min-width: 35px;
   background-image: none;
-  background-color: @color;
+  background-color: @primary;
   color: @text;
   font-size: 15px;
   line-height: 18px;
@@ -88,24 +88,24 @@ button::-moz-focus-inner {
     span { font-size: 24px; }
   }
 
-  // colors loop
-  &.positive {
-    background-color: @positive;
-    color: @positiveText;
-    border-color: @positiveBorder;
+  // color loops
+  &.secondary {
+    background-color: @secondary;
+    color: @secondaryText;
+    border-color: @secondaryBorder;
 
     &:hover,
     &:focus {
-      background-color: @positiveHover;
-      color: @positiveTextHover;
-      border-color: @positiveBorderHover;
+      background-color: @secondaryHover;
+      color: @secondaryTextHover;
+      border-color: @secondaryBorderHover;
     }
 
     &:active,
     &.active {
-      background-color: @positiveActive;
-      color: @positiveTextActive;
-      border-color: @positiveBorderActive;
+      background-color: @secondaryActive;
+      color: @secondaryTextActive;
+      border-color: @secondaryBorderActive;
     }
   }
 
@@ -130,7 +130,7 @@ button::-moz-focus-inner {
   }
 
   &.subdued {
-    background-color: @subdued;
+    background-color: @subduedColor;
     color: @subduedText;
     border-color: @subduedBorder;
 
@@ -146,26 +146,6 @@ button::-moz-focus-inner {
       background-color: @subduedActive;
       color: @subduedTextActive;
       border-color: @subduedBorderActive;
-    }
-  }
-
-  &.significant {
-    background-color: @significant;
-    color: @significantText;
-    border-color: @significantBorder;
-
-    &:hover,
-    &:focus {
-      background-color: @significantHover;
-      color: @significantTextHover;
-      border-color: @significantBorderHover;
-    }
-
-    &:active,
-    &.active {
-      background-color: @significantActive;
-      color: @significantTextActive;
-      border-color: @significantBorderActive;
     }
   }
 

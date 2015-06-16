@@ -4,8 +4,8 @@
 
 .nm-sidebar {
   position: relative;
-  color: #333;
-  background-color: #c5ced3;
+  color: @grey-5;
+  background-color: @color-2;
 
   &.absolute {
     position: absolute;
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 4px 15px;
-    background-color: #c5ced3;
+    background-color: @color-2;
   }
 
   .nm-tabs ~ .nm-list { top: 50px; }
@@ -51,24 +51,24 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-color: #beccd4;
-    border-top: 1px solid #e5eaec;
-    color: #364145;
+    background-color: @color-1;
+    border-top: 1px solid @grey;
+    color: @grey-5;
     padding: 0;
 
     li {
       padding: 0 5px;
-      border-color: #e5eaec;
+      border-color: @grey;
       &:first-child { border-left: none; }
     }
 
     a {
-      color: #364145;
+      color: @grey-5;
 
       &:hover,
       &:focus,
       &:active {
-        background-color: #d1d9dd;
+        background-color: @color-1;
       }
     }
   }

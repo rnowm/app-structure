@@ -1270,13 +1270,13 @@ button::-moz-focus-inner {
   vertical-align: middle;
   min-width: 35px;
   background-image: none;
-  background-color: #007486;
+  background-color: #6da949;
   color: white;
   font-size: 15px;
   line-height: 18px;
   font-weight: normal;
   text-align: center;
-  border: 1px solid #007486;
+  border: 1px solid #6da949;
   border-radius: 4px;
   padding: 8px 9px;
   cursor: pointer;
@@ -1296,15 +1296,15 @@ button::-moz-focus-inner {
 .nm-button:hover,
 .nm-button:focus {
   color: white;
-  background-color: #005e6d;
-  border-color: #005e6d;
+  background-color: #629741;
+  border-color: #629741;
   outline: none;
 }
 .nm-button:active,
 .nm-button.active {
   color: white;
-  background-color: #004853;
-  border-color: #004853;
+  background-color: #56853a;
+  border-color: #56853a;
 }
 .nm-button [icon]:before,
 .nm-button [data-icon]:before {
@@ -1348,22 +1348,22 @@ button::-moz-focus-inner {
 .nm-button.large span {
   font-size: 24px;
 }
-.nm-button.positive {
-  background-color: #00c607;
-  color: white;
-  border-color: #00c607;
+.nm-button.secondary {
+  background-color: #dcecd2;
+  color: #6da949;
+  border-color: #dcecd2;
 }
-.nm-button.positive:hover,
-.nm-button.positive:focus {
-  background-color: #00ad06;
-  color: white;
-  border-color: #00ad06;
+.nm-button.secondary:hover,
+.nm-button.secondary:focus {
+  background-color: #cee4c0;
+  color: #6da949;
+  border-color: #cee4c0;
 }
-.nm-button.positive:active,
-.nm-button.positive.active {
-  background-color: #009305;
-  color: white;
-  border-color: #009305;
+.nm-button.secondary:active,
+.nm-button.secondary.active {
+  background-color: #c0dcaf;
+  color: #6da949;
+  border-color: #c0dcaf;
 }
 .nm-button.negative {
   background-color: #ca3430;
@@ -1383,38 +1383,21 @@ button::-moz-focus-inner {
   border-color: #a12926;
 }
 .nm-button.subdued {
-  background-color: #d1e098;
+  background-color: #aeadad;
   color: white;
-  border-color: #d1e098;
+  border-color: #aeadad;
 }
 .nm-button.subdued:hover,
 .nm-button.subdued:focus {
-  background-color: #c8da84;
+  background-color: #a1a0a0;
   color: white;
-  border-color: #c8da84;
+  border-color: #a1a0a0;
 }
 .nm-button.subdued:active,
 .nm-button.subdued.active {
-  background-color: #bfd471;
+  background-color: #959393;
   color: white;
-  border-color: #bfd471;
-}
-.nm-button.significant {
-  background-color: #00c6d7;
-  color: white;
-  border-color: #00c6d7;
-}
-.nm-button.significant:hover,
-.nm-button.significant:focus {
-  background-color: #00afbe;
-  color: white;
-  border-color: #00afbe;
-}
-.nm-button.significant:active,
-.nm-button.significant.active {
-  background-color: #0097a4;
-  color: white;
-  border-color: #0097a4;
+  border-color: #959393;
 }
 .nm-button.block {
   display: block;
@@ -1469,7 +1452,7 @@ label {
 .nm-input:active,
 .nm-textarea:active {
   padding: 7px 8px;
-  border: 2px solid #00c6d7;
+  border: 2px solid #6da949;
   outline: none;
 }
 .nm-input:hover.small,
@@ -1626,14 +1609,14 @@ label {
 .nm-ok .nm-textarea:active,
 .nm-warning .nm-textarea:active,
 .nm-error .nm-textarea:active {
-  border-color: #00c6d7;
+  border-color: #6da949;
 }
 .nm-ok .nm-input,
 .nm-ok .nm-textarea {
-  border-color: #00c607;
+  border-color: #6da949;
 }
 .nm-ok .nm-message {
-  background-color: #00c607;
+  background-color: #6da949;
 }
 .nm-warning .nm-input,
 .nm-warning .nm-textarea {
@@ -1754,7 +1737,7 @@ label {
 .nm-dropdown:focus span,
 .nm-dropdown:active span {
   padding: 7px 39px 7px 8px;
-  border: 2px solid #00c6d7;
+  border: 2px solid #6da949;
   outline: none;
 }
 .nm-dropdown select:-moz-focusring {
@@ -1935,7 +1918,7 @@ label.nm-radio input {
   cursor: pointer;
 }
 label.nm-radio input:checked ~ span {
-  color: #00c6d7;
+  color: #6da949;
 }
 label.nm-radio input:checked ~ span:before {
   display: block;
@@ -1960,7 +1943,7 @@ label.nm-radio span:before {
   width: 12px;
   height: 12px;
   margin-top: -7px;
-  background: #00c6d7;
+  background: #6da949;
   border-radius: 50%;
 }
 label.nm-radio span:after {
@@ -2035,7 +2018,7 @@ label.nm-switch input {
 }
 label.nm-checkbox input:checked ~ span,
 label.nm-switch input:checked ~ span {
-  color: #00c6d7;
+  color: #6da949;
 }
 label.nm-checkbox span,
 label.nm-switch span {
@@ -2067,7 +2050,7 @@ label.nm-checkbox span:before {
   left: 2px;
   font-size: 20px;
   line-height: 24px;
-  color: #00c6d7;
+  color: #6da949;
   margin-top: -13px;
 }
 label.nm-checkbox span:after {
@@ -2109,14 +2092,14 @@ label.nm-switch span:after {
           transition: all 0.1s ease;
 }
 label.nm-switch input:checked ~ span:after {
-  background: #00c6d7;
-  border-color: #00c6d7;
+  background: #6da949;
+  border-color: #6da949;
 }
 label.nm-switch input:checked ~ span:before {
   -webkit-transform: translateX(35px);
       -ms-transform: translateX(35px);
           transform: translateX(35px);
-  border-color: #00c6d7;
+  border-color: #6da949;
 }
 label.nm-switch.right span {
   padding: 0 77px 0 0;
@@ -2202,7 +2185,7 @@ label.nm-switch.right input:checked ~ span:before {
 .nm-header {
   position: relative;
   height: 80px;
-  background-color: #79ac5b;
+  background-color: #a4cd8b;
   /* h2 {
     position: absolute;
     bottom: 26px;
@@ -2337,7 +2320,7 @@ label.nm-switch.right input:checked ~ span:before {
   } */
 }
 .nm-header h1 {
-  background-color: #568c36;
+  background-color: #6da949;
   height: 100%;
   line-height: 80px;
   margin: 0;
@@ -2350,8 +2333,8 @@ label.nm-switch.right input:checked ~ span:before {
 }
 .nm-sidebar {
   position: relative;
-  color: #333;
-  background-color: #c5ced3;
+  color: #31313d;
+  background-color: #dcecd2;
 }
 .nm-sidebar.absolute {
   position: absolute;
@@ -2373,7 +2356,7 @@ label.nm-switch.right input:checked ~ span:before {
   text-transform: uppercase;
   text-align: center;
   padding: 4px 15px;
-  background-color: #c5ced3;
+  background-color: #dcecd2;
 }
 .nm-sidebar .nm-tabs ~ .nm-list {
   top: 50px;
@@ -2392,43 +2375,43 @@ label.nm-switch.right input:checked ~ span:before {
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: #beccd4;
-  border-top: 1px solid #e5eaec;
-  color: #364145;
+  background-color: #f8fbf6;
+  border-top: 1px solid #f2f2f2;
+  color: #31313d;
   padding: 0;
 }
 .nm-sidebar .nm-toolbar li {
   padding: 0 5px;
-  border-color: #e5eaec;
+  border-color: #f2f2f2;
 }
 .nm-sidebar .nm-toolbar li:first-child {
   border-left: none;
 }
 .nm-sidebar .nm-toolbar a {
-  color: #364145;
+  color: #31313d;
 }
 .nm-sidebar .nm-toolbar a:hover,
 .nm-sidebar .nm-toolbar a:focus,
 .nm-sidebar .nm-toolbar a:active {
-  background-color: #d1d9dd;
+  background-color: #f8fbf6;
 }
 .nm-tabs {
   height: 50px;
   width: 100%;
-  background-color: #d1d9dd;
-  border-bottom: 1px solid #e5eaec;
+  background-color: #f8fbf6;
+  border-bottom: 1px solid #dcecd2;
   box-sizing: border-box;
 }
 .nm-tabs li {
   height: 40px;
-  color: #84959e;
-  background-color: #beccd4;
+  color: #a4cd8b;
+  background-color: #dcecd2;
   line-height: 40px;
   font-size: 14px;
   text-align: center;
   padding: 0 10px;
-  border-bottom: 1px solid #b7c1c6;
-  border-right: 1px solid #b7c1c6;
+  border-bottom: 1px solid #a4cd8b;
+  border-right: 1px solid #a4cd8b;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
@@ -2437,12 +2420,12 @@ label.nm-switch.right input:checked ~ span:before {
 .nm-tabs li:hover,
 .nm-tabs li:focus,
 .nm-tabs li:active {
-  color: #364145;
+  color: #31313d;
 }
 .nm-tabs li.active {
-  color: #364145;
-  background-color: #d1d9dd;
-  border-bottom-color: #d1d9dd;
+  color: #31313d;
+  background-color: #f8fbf6;
+  border-bottom-color: #f8fbf6;
 }
 .nm-tabs li [icon],
 .nm-tabs li [data-icon] {
@@ -2451,7 +2434,7 @@ label.nm-switch.right input:checked ~ span:before {
 }
 .nm-toolbar {
   background-color: #f2f2f2;
-  color: #333;
+  color: #31313d;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -2488,10 +2471,10 @@ label.nm-switch.right input:checked ~ span:before {
   font-size: 14px;
   text-align: center;
   padding: 0 15px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cfcece;
 }
 .nm-toolbar li:first-child {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #cfcece;
 }
 .nm-toolbar li:first-child:last-child {
   border: none;
@@ -2510,23 +2493,23 @@ label.nm-switch.right input:checked ~ span:before {
   display: block;
   margin: 0 -15px;
   height: 100%;
-  color: #333;
+  color: #31313d;
   text-decoration: none;
 }
 .nm-toolbar a:hover,
 .nm-toolbar a:focus,
 .nm-toolbar a:active {
-  background-color: #d1d9dd;
+  background-color: #f8fbf6;
 }
 .nm-toolbar.dark {
-  background-color: #30303c;
+  background-color: #31313d;
   color: white;
 }
 .nm-toolbar.dark li {
-  border-color: #808080;
+  border-color: #686868;
 }
 .nm-toolbar.dark li:first-child {
-  border-color: #808080;
+  border-color: #686868;
 }
 .nm-toolbar.dark a {
   color: white;
@@ -2534,8 +2517,8 @@ label.nm-switch.right input:checked ~ span:before {
 .nm-toolbar.dark a:hover,
 .nm-toolbar.dark a:focus,
 .nm-toolbar.dark a:active {
-  color: #888;
-  background-color: #27282f;
+  color: #686868;
+  background-color: #31313d;
 }
 .nm-toolbar .nm-pagination li {
   padding: 0 5px;
@@ -2546,15 +2529,15 @@ label.nm-switch.right input:checked ~ span:before {
   max-width: 100%;
   margin-bottom: 20px;
   border-collapse: collapse;
-  background-color: #f6f6f6;
-  color: #333;
+  background-color: #f2f2f2;
+  color: #31313d;
   font-size: 14px;
   line-height: 16px;
   box-sizing: border-box;
   text-align: left;
 }
 .nm-table thead {
-  background-color: #fffdeb;
+  background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-left: none;
 }
@@ -2563,7 +2546,7 @@ label.nm-switch.right input:checked ~ span:before {
 }
 .nm-table thead [icon],
 .nm-table thead [data-icon] {
-  color: #00c6d7;
+  color: #6da949;
   padding-left: 10px;
 }
 .nm-table th {
@@ -2605,7 +2588,7 @@ label.nm-switch.right input:checked ~ span:before {
   display: none;
   position: absolute;
   content: attr(tooltip);
-  background-color: #31323b;
+  background-color: #31313d;
   color: white;
   font-size: 12px;
   line-height: 14px;
@@ -2644,7 +2627,7 @@ label.nm-switch.right input:checked ~ span:before {
   margin: 0 0 -16px 8px;
 }
 .nm-tooltip.right:after {
-  border-right: 8px solid #31323b;
+  border-right: 8px solid #31313d;
   top: 50%;
   left: 100%;
   margin: -8px 0 0 -8px;
@@ -2690,7 +2673,7 @@ label.nm-switch.right input:checked ~ span:before {
   margin: 0 8px -16px 0;
 }
 .nm-tooltip.left:after {
-  border-left: 8px solid #31323b;
+  border-left: 8px solid #31313d;
   top: 50%;
   right: 100%;
   margin: -8px -8px 0 0;
@@ -2735,7 +2718,7 @@ label.nm-switch.right input:checked ~ span:before {
   margin: 0 -16px 8px 0;
 }
 .nm-tooltip.top:after {
-  border-top: 8px solid #31323b;
+  border-top: 8px solid #31313d;
   left: 50%;
   bottom: 100%;
   margin: 0 0 -8px -8px;
@@ -2780,7 +2763,7 @@ label.nm-switch.right input:checked ~ span:before {
   margin: 8px -16px 0 0;
 }
 .nm-tooltip.bottom:after {
-  border-bottom: 8px solid #31323b;
+  border-bottom: 8px solid #31313d;
   left: 50%;
   top: 100%;
   margin: -8px 0 0 -8px;
@@ -2834,8 +2817,8 @@ label.nm-switch.right input:checked ~ span:before {
 }
 .nm-list li {
   position: relative;
-  background-color: #d1d9dd;
-  border-bottom: 1px solid #e5eaec;
+  background-color: #f8fbf6;
+  border-bottom: 1px solid #f2f2f2;
   font-size: 12px;
   line-height: 14px;
   padding: 12px 15px;
@@ -2843,7 +2826,7 @@ label.nm-switch.right input:checked ~ span:before {
 }
 .nm-list a {
   display: block;
-  color: #333;
+  color: #31313d;
   text-decoration: none;
   margin: -12px -15px;
   padding: 12px 15px;
@@ -2852,6 +2835,6 @@ label.nm-switch.right input:checked ~ span:before {
 .nm-list a:focus,
 .nm-list a:active,
 .nm-list a.active {
-  color: #fff;
-  background-color: #9ea5a9;
+  color: #ffffff;
+  background-color: #6da949;
 }

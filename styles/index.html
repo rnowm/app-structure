@@ -40,30 +40,18 @@
         line-height: 50px;
       }
 
-      .primary   { background: #A4CD8B; }
-      .primary-1 { background: #E5F2DE; }
-      .primary-2 { background: #CAE5B9; }
-      .primary-3 { background: #79AC5B; }
-      .primary-4 { background: #568C36; }
+      .colors .primary   { background: #A4CD8B; }
+      .colors .primary-1 { background: #E5F2DE; }
+      .colors .primary-2 { background: #CAE5B9; }
+      .colors .primary-3 { background: #79AC5B; }
+      .colors .primary-4 { background: #568C36; }
 
-      .secondary   { background: #6A9C8C; }
-      .secondary-1 { background: #CADDD7; }
-      .secondary-2 { background: #97BAAF; }
-      .secondary-3 { background: #45836F; }
-      .secondary-4 { background: #296B55; }
-
-      .subdued   { background: #D1E098; }
-      .subdued-1 { background: #F6FBE5; }
-      .subdued-2 { background: #ECF6C7; }
-      .subdued-3 { background: #A9BC63; }
-      .subdued-4 { background: #85993B; }
-
-      .grey   { background: #f2f2f2; }
-      .grey-1 { background: #cfcece; }
-      .grey-2 { background: #b3b5b7; }
-      .grey-3 { background: #aeadad; }
-      .grey-4 { background: #686868; }
-      .grey-5 { background: #31313d; color: #fff; }
+      .colors .grey   { background: #f2f2f2; }
+      .colors .grey-1 { background: #cfcece; }
+      .colors .grey-2 { background: #b3b5b7; }
+      .colors .grey-3 { background: #aeadad; }
+      .colors .grey-4 { background: #686868; }
+      .colors .grey-5 { background: #31313d; color: #fff; }
     </style>
   </head>
 
@@ -82,20 +70,6 @@
         <li><span class="primary-4">@primary-4</span></li>
       </ul>
       <ul class="colors nm-gutter" columns="6 sm3 xs2">
-        <li><span class="secondary">@secondary</span></li>
-        <li><span class="secondary-1">@secondary-1</span></li>
-        <li><span class="secondary-2">@secondary-2</span></li>
-        <li><span class="secondary-3">@secondary-3</span></li>
-        <li><span class="secondary-4">@secondary-4</span></li>
-      </ul>
-      <ul class="colors nm-gutter" columns="6 sm3 xs2">
-        <li><span class="subdued">@subdued</span></li>
-        <li><span class="subdued-1">@subdued-1</span></li>
-        <li><span class="subdued-2">@subdued-2</span></li>
-        <li><span class="subdued-3">@subdued-3</span></li>
-        <li><span class="subdued-4">@subdued-4</span></li>
-      </ul>
-      <ul class="colors nm-gutter" columns="6 sm3 xs2">
         <li><span class="grey">@grey</span></li>
         <li><span class="grey-1">@grey-1</span></li>
         <li><span class="grey-2">@grey-2</span></li>
@@ -107,24 +81,21 @@
       <h2>Buttons</h2>
       <div class="nm-row">
         <button class="nm-button small">Small</button>
-        <button class="nm-button positive small">Small Positive</button>
-        <button class="nm-button negative small">Small Negative</button>
+        <button class="nm-button secondary small">Small secondary</button>
         <button class="nm-button subdued small">Small Subdued</button>
-        <button class="nm-button significant small">Small Significant</button>
+        <button class="nm-button negative small">Small Negative</button>
       </div>
       <div class="nm-row">
         <button class="nm-button">Default</button>
-        <button class="nm-button positive">Positive</button>
-        <button class="nm-button negative">Negative</button>
+        <button class="nm-button secondary">secondary</button>
         <button class="nm-button subdued">Subdued</button>
-        <button class="nm-button significant">Significant</button>
+        <button class="nm-button negative">Negative</button>
       </div>
       <div class="nm-row">
         <button class="nm-button large">Large</button>
-        <button class="nm-button positive large">Large Positive</button>
-        <button class="nm-button negative large">Large Negative</button>
+        <button class="nm-button secondary large">Large secondary</button>
         <button class="nm-button subdued large">Large Subdued</button>
-        <button class="nm-button significant large">Large Significant</button>
+        <button class="nm-button negative large">Large Negative</button>
       </div>
       <div class="nm-row">
         <button class="nm-button block small">Small Block</button>
@@ -185,24 +156,21 @@
       </div>
       <div class="nm-row">
         <button class="nm-button" disabled>Default</button>
-        <button class="nm-button positive" disabled>Positive</button>
-        <button class="nm-button negative" disabled>Negative</button>
+        <button class="nm-button secondary" disabled>secondary</button>
         <button class="nm-button subdued" disabled>Subdued</button>
-        <button class="nm-button significant" disabled>Significant</button>
+        <button class="nm-button negative" disabled>Negative</button>
       </div>
       <div class="nm-group">
         <button class="nm-button">Default</button>
-        <button class="nm-button positive">Positive</button>
-        <button class="nm-button negative">Negative</button>
+        <button class="nm-button secondary">secondary</button>
         <button class="nm-button subdued">Subdued</button>
-        <button class="nm-button significant">Significant</button>
+        <button class="nm-button negative">Negative</button>
       </div>
       <div class="nm-group disabled">
         <button class="nm-button">Default</button>
-        <button class="nm-button positive">Positive</button>
-        <button class="nm-button negative">Negative</button>
+        <button class="nm-button secondary">secondary</button>
         <button class="nm-button subdued">Subdued</button>
-        <button class="nm-button significant">Significant</button>
+        <button class="nm-button negative">Negative</button>
       </div>
 
       <h2>Inputs</h2>
@@ -261,12 +229,12 @@
       <div class="nm-group">
         <a href="" class="nm-button small">Anchor</a>
         <input type="text" class="nm-input small" placeholder="Enter user name">
-        <button class="nm-button small positive">Button</button>
+        <button class="nm-button small secondary">Button</button>
       </div>
       <div class="nm-group">
         <a href="" class="nm-button">Anchor</a>
         <input type="text" class="nm-input" placeholder="Enter user name">
-        <button class="nm-button positive">Button</button>
+        <button class="nm-button secondary">Button</button>
       </div>
       <div class="nm-group">
         <a href="" class="nm-button large">Anchor</a>
@@ -719,13 +687,13 @@
           <button class="nm-button">Button 1</button>
         </div>
         <div class="nm-tooltip active top" tooltip="top">
-          <button class="nm-button positive">Button 2</button>
-        </div>
-        <div class="nm-tooltip active bottom" tooltip="bottom">
-          <button class="nm-button negative">Button 3</button>
+          <button class="nm-button secondary">Button 2</button>
         </div>
         <div class="nm-tooltip active right" tooltip="right">
-          <button class="nm-button significant">Button 4</button>
+          <button class="nm-button subdued">Button 3</button>
+        </div>
+        <div class="nm-tooltip active bottom" tooltip="bottom">
+          <button class="nm-button negative">Button 4</button>
         </div>
       </div>
       <div class="nm-center demo">
@@ -733,13 +701,13 @@
           <button class="nm-button">Button 1</button>
         </div>
         <div class="nm-tooltip active start top" tooltip="top start">
-          <button class="nm-button positive">Button 2</button>
+          <button class="nm-button secondary">Button 2</button>
         </div>
         <div class="nm-tooltip active start bottom" tooltip="bottom start">
-          <button class="nm-button negative">Button 3</button>
+          <button class="nm-button subdued">Button 3</button>
         </div>
-        <div class="nm-tooltip active start right" tooltip="right start">
-          <button class="nm-button significant">Button 4</button>
+        <div class="nm-tooltip active start bottom" tooltip="bottom start">
+          <button class="nm-button negative">Button 4</button>
         </div>
       </div>
       <div class="nm-center demo">
@@ -747,13 +715,13 @@
           <button class="nm-button">Button 1</button>
         </div>
         <div class="nm-tooltip active end top" tooltip="top end">
-          <button class="nm-button positive">Button 2</button>
+          <button class="nm-button secondary">Button 2</button>
         </div>
         <div class="nm-tooltip active end bottom" tooltip="bottom end">
-          <button class="nm-button negative">Button 3</button>
+          <button class="nm-button subdued">Button 3</button>
         </div>
         <div class="nm-tooltip active end right" tooltip="right end">
-          <button class="nm-button significant">Button 4</button>
+          <button class="nm-button negative">Button 4</button>
         </div>
       </div>
       <div class="nm-center demo">
@@ -761,13 +729,13 @@
           <button class="nm-button">Button 1</button>
         </div>
         <div class="nm-tooltip active reverse top" tooltip="top reverse">
-          <button class="nm-button positive">Button 2</button>
+          <button class="nm-button secondary">Button 2</button>
         </div>
         <div class="nm-tooltip active reverse bottom" tooltip="bottom reverse">
-          <button class="nm-button negative">Button 3</button>
+          <button class="nm-button subdued">Button 3</button>
         </div>
         <div class="nm-tooltip active reverse right" tooltip="right reverse">
-          <button class="nm-button significant">Button 4</button>
+          <button class="nm-button negative">Button 4</button>
         </div>
       </div>
       <div class="nm-center demo">
@@ -775,13 +743,13 @@
           <button class="nm-button">Button 1</button>
         </div>
         <div class="nm-tooltip active reverse top start" tooltip="top reverse start">
-          <button class="nm-button positive">Button 2</button>
+          <button class="nm-button secondary">Button 2</button>
         </div>
         <div class="nm-tooltip active reverse bottom start" tooltip="bottom reverse start">
-          <button class="nm-button negative">Button 3</button>
+          <button class="nm-button subdued">Button 3</button>
         </div>
         <div class="nm-tooltip active reverse right start" tooltip="right reverse start">
-          <button class="nm-button significant">Button 4</button>
+          <button class="nm-button negative">Button 4</button>
         </div>
       </div>
       <div class="nm-center demo">
@@ -789,19 +757,20 @@
           <button class="nm-button">Button 1</button>
         </div>
         <div class="nm-tooltip active reverse top end" tooltip="top reverse end">
-          <button class="nm-button positive">Button 2</button>
+          <button class="nm-button secondary">Button 2</button>
         </div>
         <div class="nm-tooltip active reverse bottom end" tooltip="bottom reverse end">
-          <button class="nm-button negative">Button 3</button>
+          <button class="nm-button subdued">Button 3</button>
         </div>
         <div class="nm-tooltip active reverse right end" tooltip="right reverse end">
-          <button class="nm-button significant">Button 4</button>
+          <button class="nm-button negative">Button 4</button>
         </div>
       </div>
 
       <h2>Headers</h2>
       <header class="nm-header">
-        <nav>
+        <h1><a href="/">Service name</a></h1>
+        <!-- <nav>
           <button class="nm-menu" icon="menu"></button>
           <button class="nm-close" icon="close"></button>
           <ul>
@@ -810,8 +779,7 @@
             <li><a href=""><span>Exit</span><i icon="close_circle"></i></a></li>
           </ul>
         </nav>
-        <h1><a href="/">Service name</a></h1>
-        <h2>Brand name</h2>
+        <h2>Brand name</h2> -->
       </header>
 
       <h2>Dialogs</h2>
@@ -820,7 +788,7 @@
         <p>Downloading document. You will find it in your Downloads folder.</p>
         <footer>
           <button class="nm-button subdued">Cancel</button>
-          <button class="nm-button positive">Accept</button>
+          <button class="nm-button">Accept</button>
         </footer>
       </div>
       <div class="nm-dialog">
@@ -830,7 +798,7 @@
         </header>
         <p>Downloading document. You will find it in your Downloads folder.</p>
         <footer>
-          <button class="nm-button positive">Accept</button>
+          <button class="nm-button">Accept</button>
         </footer>
       </div>
 

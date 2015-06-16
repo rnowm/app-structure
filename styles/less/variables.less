@@ -3,25 +3,25 @@
 //
 
 // Theme colors
-@color: #007486;
+@primary: @color-3;
 @text: white;
-@border: @color;
-@colorHover: darken(@color,5%);
+@border: @primary;
+@colorHover: darken(@primary,5%);
 @textHover: @text;
 @borderHover: @colorHover;
-@colorActive: darken(@color,10%);
+@colorActive: darken(@primary,10%);
 @textActive: @text;
 @borderActive: @colorActive;
 
-@positive: #00c607;
-@positiveText: @text;
-@positiveBorder: @positive;
-@positiveHover: darken(@positive,5%);
-@positiveTextHover: @positiveText;
-@positiveBorderHover: @positiveHover;
-@positiveActive: darken(@positive,10%);
-@positiveTextActive: @positiveText;
-@positiveBorderActive: @positiveActive;
+@secondary: @color-2;
+@secondaryText: @color-3;
+@secondaryBorder: @color-2;
+@secondaryHover: darken(@secondary,5%);
+@secondaryTextHover: @secondaryText;
+@secondaryBorderHover: @secondaryHover;
+@secondaryActive: darken(@secondary,10%);
+@secondaryTextActive: @secondaryText;
+@secondaryBorderActive: @secondaryActive;
 
 @negative: #ca3430;
 @negativeText: @text;
@@ -33,26 +33,18 @@
 @negativeTextActive: @negativeText;
 @negativeBorderActive: @negativeActive;
 
-@subdued: #84959e;
+@subduedColor: @grey-3;
 @subduedText: @text;
-@subduedBorder: @subdued;
-@subduedHover: darken(@subdued,5%);
+@subduedBorder: @subduedColor;
+@subduedHover: darken(@subduedColor,5%);
 @subduedTextHover: @subduedText;
 @subduedBorderHover: @subduedHover;
-@subduedActive: darken(@subdued,10%);
+@subduedActive: darken(@subduedColor,10%);
 @subduedTextActive: @subduedText;
 @subduedBorderActive: @subduedActive;
 
-@significant: #00c6d7;
-@significantText: @text;
-@significantBorder: @significant;
-@significantHover: darken(@significant,5%);
-@significantTextHover: @significantText;
-@significantBorderHover: @significantHover;
-@significantActive: darken(@significant,10%);
-@significantTextActive: @significantText;
-@significantBorderActive: @significantActive;
-
+@significant: @color-3;
+@positive: @color-3;
 @warning: #f0ad4e;
 
 // Common colors
@@ -66,17 +58,11 @@
 @grey-4: #686868;
 @grey-5: #31313d;
 
-@primary:   #A4CD8B;
-@primary-1: #E5F2DE;
-@primary-2: #CAE5B9;
-@primary-3: #79AC5B;
-@primary-4: #568C36;
-
-@secondary:   #6A9C8C;
-@secondary-1: #CADDD7;
-@secondary-2: #97BAAF;
-@secondary-3: #45836F;
-@secondary-4: #296B55;
+@color:   #A4CD8B;
+@color-1: lighten(@color,30%);
+@color-2: lighten(@color,20%);
+@color-3: darken(@color,20%);
+@color-4: darken(@color,40%);
 
 @subdued:   #D1E098;
 @subdued-1: #F6FBE5;
