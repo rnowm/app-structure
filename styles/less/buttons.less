@@ -27,6 +27,7 @@ button::-moz-focus-inner {
   text-decoration: none;
   touch-action: manipulation;
   box-sizing: border-box;
+  box-shadow: @shadow;
   text-transform: none;
   .truncate();
 
@@ -37,6 +38,7 @@ button::-moz-focus-inner {
     background-color: @colorHover;
     border-color: @borderHover;
     outline: none;
+    box-shadow: none;
   }
 
   &:active,
@@ -44,6 +46,7 @@ button::-moz-focus-inner {
     color: @textActive;
     background-color: @colorActive;
     border-color: @borderActive;
+    box-shadow: none;
   }
 
   // icons
