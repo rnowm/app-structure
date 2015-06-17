@@ -1,5 +1,5 @@
 //
-// nm components - inputs
+// rf components - inputs
 //
 
 label {
@@ -12,8 +12,8 @@ label {
   padding-right: 7px;
 }
 
-.nm-input,
-.nm-textarea {
+.rf-input,
+.rf-textarea {
   display: inline-block;
   vertical-align: middle;
   background: white;
@@ -111,11 +111,11 @@ label {
   }
 }
 
-.nm-input { .truncate(); }
-.nm-textarea { resize: none; }
+.rf-input { .truncate(); }
+.rf-textarea { resize: none; }
 
 // validation
-.nm-message {
+.rf-message {
   display: inline-block;
   vertical-align: middle;
   color: white;
@@ -125,11 +125,11 @@ label {
   box-sizing: border-box;
 }
 
-.nm-ok,
-.nm-warning,
-.nm-error {
-  .nm-input,
-  .nm-textarea {
+.rf-ok,
+.rf-warning,
+.rf-error {
+  .rf-input,
+  .rf-textarea {
     padding: 7px 8px;
     border-width: 2px;
     border-style: solid;
@@ -142,50 +142,50 @@ label {
   }
 }
 
-.nm-ok {
-  .nm-input,
-  .nm-textarea  { border-color: @positive; }
-  .nm-message { background-color: @positive; }
+.rf-ok {
+  .rf-input,
+  .rf-textarea  { border-color: @positive; }
+  .rf-message { background-color: @positive; }
 }
 
-.nm-warning {
-  .nm-input,
-  .nm-textarea  { border-color: @warning; }
-  .nm-message { background-color: @warning; }
+.rf-warning {
+  .rf-input,
+  .rf-textarea  { border-color: @warning; }
+  .rf-message { background-color: @warning; }
 }
 
-.nm-error {
-  .nm-input,
-  .nm-textarea  { border-color: @negative; }
-  .nm-message { background-color: @negative; }
+.rf-error {
+  .rf-input,
+  .rf-textarea  { border-color: @negative; }
+  .rf-message { background-color: @negative; }
 }
 
-.nm-input.block + .nm-message,
-.nm-textarea.block + .nm-message {
+.rf-input.block + .rf-message,
+.rf-textarea.block + .rf-message {
   margin-top: 5px;
   display: block;
 }
 
 // input containers
-.nm-row,
-.nm-group {
+.rf-row,
+.rf-group {
   display: block;
   position: relative;
   margin-bottom: 10px;
 
   label {
     display: block;
-    &.nm-inline { display: inline-block; }
+    &.rf-inline { display: inline-block; }
   }
 
   // items without separation
   & > label + *,
-  & > .nm-message {
+  & > .rf-message {
     margin-left: 0;
   }
 }
 
-.nm-group {
+.rf-group {
   & > * {
     border-radius: 0 !important;
 
@@ -199,7 +199,7 @@ label {
     & ~ * { margin: 0 0 0 -5px !important; }
   }
 
-  .nm-button + .nm-button { border-left-color: white; }
+  .rf-button + .rf-button { border-left-color: white; }
 }
 
 // disabled

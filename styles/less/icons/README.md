@@ -16,4 +16,4 @@ or
 
 Preview all icons: [http://tef-components.github.io/icons/fonts/icons.html](http://tef-components.github.io/icons/fonts/icons.html)
 
-Read our [docs section](https://github.com/tef-components/docs) to learn how to use nm components.
+Read our [docs section](https://github.com/tef-components/docs) to learn how to use rf components.

@@ -1,8 +1,8 @@
 //
-// nm components - headers
+// rf components - headers
 //
 
-.nm-header {
+.rf-header {
   position: fixed;
   top: 0;
   right: 0;
@@ -10,7 +10,7 @@
   z-index: 97;
 
 
-  .nm-wrapper {
+  .rf-wrapper {
     background-color: @headerColor;
     height: @headerHeightSM;
     line-height: @headerHeightSM;
@@ -35,8 +35,8 @@
       text-decoration: none;
 
       &:before {
-        font-size: 150px;
-        .media-min-sm({ font-size: 200px; });
+        font-size: 30px;
+        .media-min-sm({ font-size: 50px; });
       }
     }
   }
@@ -121,8 +121,8 @@
     }
   } */
 
-  .nm-close,
-  .nm-menu {
+  .rf-close,
+  .rf-menu {
     display: none;
     position: absolute;
     top: 0;
@@ -152,7 +152,7 @@
     }
   }
 
-  .nm-close {
+  .rf-close {
     right: 0;
     left: auto;
   }

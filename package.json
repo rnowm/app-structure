@@ -1,15 +1,11 @@
 {
-  "name": "foodinibackend",
+  "name": "yeah!",
   "version": "1.0.0",
-  "description": "Foodini Backend Services",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "rf app strucure",
+  "main": "styles/template.html",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "oauth20-provider": "^0.6.0",
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "^2.2.0",
     "grunt-contrib-concat": "^0.5.1",

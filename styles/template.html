@@ -3,31 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>nm components demo</title>
+    <title>rf components demo</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
 
   <body>
-    <header class="nm-header">
-      <div class="nm-wrapper" columns="4 md3 sm1">
-      <h1><a href="/" icon="natural_machines">natural machines</a></h1>
+    <header class="rf-header">
+      <div class="rf-wrapper" columns="4 md3 sm1">
+      <h1><a href="/" icon="help_circle">logo</a></h1>
       <nav>
-        <button id="show-menu-btn" onclick="showMenu()" class="nm-menu" icon="menu" show></button>
-        <button id="hide-menu-btn" onclick="hideMenu()" class="nm-close" icon="close"></button>
+        <button id="show-menu-btn" onclick="showMenu()" class="rf-menu" icon="menu" show></button>
+        <button id="hide-menu-btn" onclick="hideMenu()" class="rf-close" icon="close"></button>
       </nav>
       </div>
     </header>
 
-    <section class="nm-content">
-      <div columns="4 md3 sm1" class="nm-wrapper">
-        <nav id="sidebar" class="nm-sidebar absolute">
-          <ul class="nm-tabs" columns="3">
+    <section class="rf-content">
+      <div columns="4 md3 sm1" class="rf-wrapper">
+        <nav id="sidebar" class="rf-sidebar absolute">
+          <ul class="rf-tabs" columns="3">
             <li><i icon="user"></i></li>
             <li class="active"><i icon="search"></i></li>
-            <li><i icon="help_circle"></i></li>
+            <li><i icon="plus"></i></li>
           </ul>
-          <nav class="nm-toolbar">
+          <nav class="rf-toolbar">
             <ul>
               <li><i icon="user"></i></li>
               <li>Edit</li>
@@ -35,10 +35,10 @@
               <li><i icon="help_circle"></i></li>
             </ul>
           </nav>
-          <div class="nm-list">
+          <div class="rf-list">
             <ul>
               <li>
-                <input type="text" class="nm-input icon small block">
+                <input type="text" class="rf-input icon small block">
                 <i icon="search"></i>
               </li>
             </ul>
@@ -62,29 +62,29 @@
             </ul>
           </div>
         </nav>
-        <section class="nm-content" column-offset="1 md1 sm0" column-span="3 md2 sm1">
+        <section class="rf-content" column-offset="1 md1 sm0" column-span="3 md2 sm1">
           <h2>Forms</h1>
           <p>This page shows basic form elements.</p>
-          <div class="nm-row">
+          <div class="rf-row">
             <label>Consectetuer</label>
-            <input type="text" class="nm-input block">
+            <input type="text" class="rf-input block">
           </div>
-          <div class="nm-row">
+          <div class="rf-row">
             <label>Adipiscing elit</label>
-            <input type="text" class="nm-input block">
+            <input type="text" class="rf-input block">
           </div>
-          <article class="nm-row">
+          <article class="rf-row">
             <label>Sed diam nonummy</label>
-            <input type="text" class="nm-input block">
+            <input type="text" class="rf-input block">
           </article>
-          <article columns="4 sm2 xs1" class="nm-gutter">
-            <div class="nm-row" column-span="2 sm2 xs1">
+          <article columns="4 sm2 xs1" class="rf-gutter">
+            <div class="rf-row" column-span="2 sm2 xs1">
               <label>Nibh euismod</label>
-              <input type="text" class="nm-input block">
+              <input type="text" class="rf-input block">
             </div>
-            <div class="nm-row">
+            <div class="rf-row">
               <label>Tincidunt</label>
-              <div class="nm-dropdown block" icon="down">
+              <div class="rf-dropdown block" icon="down">
                 <select name="state">
                   <option>Volutpat</option>
                   <option>Adipiscing</option>
@@ -93,59 +93,59 @@
                 </select>
               </div>
             </div>
-            <div class="nm-row">
+            <div class="rf-row">
               <label>Laoreet</label>
-              <input type="text" class="nm-input block">
+              <input type="text" class="rf-input block">
             </div>
           </article>
-          <article class="nm-row">
+          <article class="rf-row">
             <label>Magna aliquam</label>
-            <textarea class="nm-input block"></textarea>
+            <textarea class="rf-input block"></textarea>
           </article>
           <br>
-          <article class="nm-row">
+          <article class="rf-row">
             <p>Lorem ipsum</p>
-            <label class="nm-radio">
+            <label class="rf-radio">
               <input type="radio" name="radio1" checked>
               <span>Lorem ipsum dolor sit amet</span>
             </label>
-            <label class="nm-radio">
+            <label class="rf-radio">
               <input type="radio" name="radio1">
               <span>Hendrerit in vulputate velit esse molestie </span>
             </label>
-            <label class="nm-radio">
+            <label class="rf-radio">
               <input type="radio" name="radio1">
               <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat </span>
             </label>
           </article>
           <br>
-          <article class="nm-row">
+          <article class="rf-row">
             <p>Laoreet dolore</p>
-            <label class="nm-checkbox">
+            <label class="rf-checkbox">
               <input type="checkbox" checked>
               <span icon="check">Lorem ipsum dolor sit amet</span>
             </label>
-            <label class="nm-checkbox">
+            <label class="rf-checkbox">
               <input type="checkbox">
               <span icon="check">Hendrerit in vulputate velit esse molestie </span>
             </label>
-            <label class="nm-checkbox">
+            <label class="rf-checkbox">
               <input type="checkbox">
               <span icon="check">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat </span>
             </label>
           </article>
           <br>
-          <div class="nm-row">
+          <div class="rf-row">
             <p>Euismod tincidunt</p>
-            <label class="nm-switch">
+            <label class="rf-switch">
               <input type="checkbox">
               <span>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
             </label>
           </div>
           <br>
-          <footer class="nm-right">
-            <button class="nm-button subdued">Cancel</button>
-            <button class="nm-button">Submit</button>
+          <footer class="rf-right">
+            <button class="rf-button subdued">Cancel</button>
+            <button class="rf-button">Submit</button>
           </footer>
         </section>
       </div>
