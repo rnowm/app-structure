@@ -6,16 +6,48 @@
   position: relative;
   color: @grey-5;
   background-color: @color-2;
-
-  &.right { border-left: 1px solid @color-2; }
-  &.left { border-right: 1px solid @color-2; }
+  border-right: 1px solid @color-2;
 
   &.absolute {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: @headerHeightSM;
     bottom: 0;
     left: 0;
+    right: 50%;
+    z-index: 98;
+    transform: translateX(-105%);
+    transition: transform 0.4s ease;
 
+    .media-min-sm({
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(0);
+    });
+
+    .media-max-sm({ width: 70%; });
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: fade(@color, 10%);
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    &[show] {
+      transform: translateX(0);
+
+      &:before {
+        right: -50%;
+        opacity: 1;
+
+        .media-min-sm({ display: none; });
+      }
+    }
 
     // list
     .nm-list {
@@ -25,6 +57,11 @@
       right: 0;
       bottom: 0;
       left: 0;
+
+      ul {
+        border-top: 1px solid @white;
+        border-bottom: 1px solid @white;
+      }
     }
   }
 
@@ -37,6 +74,13 @@
     background-color: @color-2;
   }
 
+  // tabs
+  .nm-tabs {
+    position: relative;
+    z-index: 1;
+  }
+  
+  // list
   .nm-tabs ~ .nm-list { top: 50px; }
   .nm-tabs ~ .nm-list { bottom: 40px; }
 
@@ -55,13 +99,14 @@
     left: 0;
     z-index: 1;
     background-color: @color-1;
-    border-top: 1px solid @grey;
+    border-top: 1px solid @color-2;
     color: @grey-5;
     padding: 0;
 
+
     li {
       padding: 0 5px;
-      border-color: @grey;
+      border-color: @color-2;
       &:first-child { border-left: none; }
     }
 

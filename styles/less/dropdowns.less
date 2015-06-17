@@ -53,9 +53,9 @@
   &:active {
     select,
     span {
-      padding: 7px 39px 7px 8px;
-      border: 2px solid @significant;
+      border-color: @significant;
       outline: none;
+      box-shadow: @shadowSignificant;
     }
   }
 
@@ -167,6 +167,7 @@
 
   &[icon],
   &[data-icon] {
+    color: @significant;
     text-align: left;
   }
 

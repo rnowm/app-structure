@@ -9,23 +9,19 @@
   </head>
 
   <body>
-    <div class="nm-wrapper">
-      <header class="nm-header" columns="4 md3 sm1">
-        <h1><a href="/" icon="natural_machines">natural machines</a></h1>
-        <!-- <nav>
-          <button id="show-menu-btn" onclick="showMenu()" class="nm-menu" icon="menu"></button>
-          <button id="hide-menu-btn" onclick="hideMenu()" class="nm-close" icon="close"></button>
-          <ul id="menu" onclick="hideMenu()">
-            <li><span>Hello George!</span><i icon="user"></i></li>
-            <li><a href=""><span>Help</span><i icon="help_circle"></i></a></li>
-            <li><a href=""><span>Exit</span><i icon="close_circle"></i></a></li>
-          </ul>
-        </nav>
-        <h2>Brand</h2> -->
-      </header>
+    <header class="nm-header">
+      <div class="nm-wrapper" columns="4 md3 sm1">
+      <h1><a href="/" icon="natural_machines">natural machines</a></h1>
+      <nav>
+        <button id="show-menu-btn" onclick="showMenu()" class="nm-menu" icon="menu" show></button>
+        <button id="hide-menu-btn" onclick="hideMenu()" class="nm-close" icon="close"></button>
+      </nav>
+      </div>
+    </header>
 
-      <div columns="4 md3 sm1" class="nm-relative">
-        <nav class="nm-sidebar absolute left" columns="sm0">
+    <section class="nm-content">
+      <div columns="4 md3 sm1" class="nm-wrapper">
+        <nav id="sidebar" class="nm-sidebar absolute">
           <ul class="nm-tabs" columns="3">
             <li><i icon="user"></i></li>
             <li class="active"><i icon="search"></i></li>
@@ -88,7 +84,7 @@
             </div>
             <div class="nm-row">
               <label>Tincidunt</label>
-              <div class="nm-dropdown block" icon="angle_down">
+              <div class="nm-dropdown block" icon="down">
                 <select name="state">
                   <option>Volutpat</option>
                   <option>Adipiscing</option>
@@ -153,20 +149,23 @@
           </footer>
         </section>
       </div>
-    </div>
+    </section>
 
     <script>
-      var menu = document.getElementById('menu');
+      var sidebar = document.getElementById('sidebar');
       var hideMenuBtn = document.getElementById('hide-menu-btn');
+      var showMenuBtn = document.getElementById('show-menu-btn');
 
       function showMenu() {
-        menu.setAttribute('class','show');
-        hideMenuBtn.setAttribute('class','nm-close show');
+        sidebar.setAttribute('show','');
+        hideMenuBtn.setAttribute('show','');
+        showMenuBtn.removeAttribute('show');
       }
 
       function hideMenu() {
-        menu.setAttribute('class','');
-        hideMenuBtn.setAttribute('class','nm-close');
+        sidebar.removeAttribute('show');
+        hideMenuBtn.removeAttribute('show');
+        showMenuBtn.setAttribute('show','');
       }
     </script>
   </body>

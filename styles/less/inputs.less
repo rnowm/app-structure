@@ -48,12 +48,9 @@ label {
   &:hover,
   &:focus,
   &:active {
-    padding: 7px 8px;
-    border: 2px solid @significant;
+    border-color: @significant;
     outline: none;
-
-    &.small { padding: 5px 8px; }
-    &.large { padding: 6px 13px; }
+    box-shadow: @shadowSignificant;
   }
 
   // icons

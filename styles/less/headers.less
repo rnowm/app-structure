@@ -3,35 +3,42 @@
 //
 
 .nm-header {
-  position: relative;
-  height: @headerHeight;
-  background-color: @color-3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 97;
+
+
+  .nm-wrapper {
+    background-color: @headerColor;
+    height: @headerHeightSM;
+    line-height: @headerHeightSM;
+    border-bottom: none;
+
+    .media-min-sm({
+      height: @headerHeight;
+      line-height: @headerHeight;
+    });
+  }
 
   h1 {
     height: 100%;
-    line-height: @headerHeight;
     margin: 0;
     text-align: center;
-    box-shadow: @shadowInset;
+
+    .media-min-sm({ border-right: 2px solid darken(@color-3, 2%); });
 
     a {
       color: white;
       font-size: 0;
       text-decoration: none;
 
-      &:before { font-size: 200px; }
+      &:before {
+        font-size: 150px;
+        .media-min-sm({ font-size: 200px; });
+      }
     }
-  }
-
-  /* h2 {
-    position: absolute;
-    bottom: 26px;
-    left: 24px;
-    background: url(../images/logo.png) no-repeat;
-    height: 34px;
-    width: 200px;
-    margin: 0;
-    font-size: 0;
   }
 
   nav {
@@ -39,16 +46,14 @@
     top: 0;
     right: 0;
     left: 0;
-    height: 32px;
-    padding: 0 32px;
-    background: @headerNav;
+    height: @headerHeight;
     color: @headerText;
     z-index: 98;
 
     .media-min-sm({ position: relative; });
   }
 
-  ul {
+  /* ul {
     display: none;
     position: absolute;
     top: 32px;
@@ -73,7 +78,6 @@
   }
 
   li {
-    color: @headerReverse;
     font-size: 12px;
     line-height: 14px;
     padding: 9px 40px;
@@ -94,7 +98,6 @@
     }
 
     a {
-      color: @headerReverse;
       text-decoration: none;
 
       .media-min-sm({
@@ -116,23 +119,27 @@
       padding-left: 4px;
       font-size: 16px;
     }
-  }
+  } */
 
   .nm-close,
   .nm-menu {
+    display: none;
     position: absolute;
     top: 0;
-    right: 32px;
-    height: 32px;
+    left: 0;
+    height: 40px;
     width: 40px;
     border: none;
-    background: white;
-    color: @headerReverse;
+    padding: 0;
+    margin: 5px;
+    background: transparent;
+    color: @white;
     font-size: 25px;
     z-index: 99;
     cursor: pointer;
+    border-radius: 50%;
 
-    &.show {
+    &[show] {
       display: block;
       .media-min-sm({ display: none; });
     }
@@ -140,19 +147,13 @@
     &:hover,
     &:focus,
     &:active {
-      background: white;
-      color: @headerReverse;
+      background: @white;
+      color: @headerColor;
     }
   }
 
   .nm-close {
-    display: none;
+    right: 0;
+    left: auto;
   }
-
-  .nm-menu {
-    background: @headerNav;
-    color: white;
-
-    .media-min-sm({ display: none; });
-  } */
 }
